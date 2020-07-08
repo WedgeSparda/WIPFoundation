@@ -1,0 +1,37 @@
+name: WIPFoundation
+fileGroups: [README.md, LICENSE.md]
+targets:
+  WIPFoundation:
+    type: framework
+    platform: [iOS, tvOS, macOS]
+    sources: Source
+    info:
+      path: Info.plist
+    deploymentTarget:
+      iOS: 13.0
+      tvOS: 13.0
+      macOS: 10.14
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: es.rpastor.wip.foundation
+    scheme:
+      testTargets:
+        - Tests_${platform}
+  WIPFoundation_watchOS:
+    type: framework
+    platform: watchOS
+    source: Source
+    info:
+      path: Info.plist
+    deploymentTarget: 6.0
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: es.rpastor.wip.foundation
+  Tests: 
+    type: bundle.unit-test
+    platform: [iOS, tvOS, macOS]
+    sources: Tests
+    info:
+      path: Tests/Info.plist
+    dependencies:
+      - target: WIPFoundation_${platform}
