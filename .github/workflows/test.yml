@@ -11,10 +11,10 @@ jobs:
         run: brew install mint
       - name: Install Firebase
         run: brew install fastlane
-  execute_xcodegen:
-    name: Execute XCodegen
-    runs-on: macos-latest
-    steps:
+#  execute_xcodegen:
+#    name: Execute XCodegen
+#    runs-on: macos-latest
+#    steps:
       - name: Run Xcodegen
         run: mint run xcodegen
 
