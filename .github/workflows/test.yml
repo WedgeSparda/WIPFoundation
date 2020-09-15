@@ -3,12 +3,14 @@ name: Test
 jobs:
   install_dependencies:
     name: Install Dependencies
-    runs-on: macOS-latest
+    runs-on: macos-latest
     steps:
       - name: Install Homebrew
         run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
       - name: Install Mint
         run: brew install mint
+      - name: Execute XCodegen
+        run: mint run xcodegen
 
 
     
