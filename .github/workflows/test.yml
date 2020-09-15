@@ -1,9 +1,13 @@
-on:
-  push:
-    jobs:
-      install_mint:
-        name: Install Mint
-        runs-on: macos-latest
+on: push
+name: Test
+jobs:
+  install_dependencies:
+    name: Install Dependencies
+    runs-on: macOS-latest
+    steps:
+      - name: Install Homebrew
+        run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+      - name: Install Mint
         run: brew install mint
 
 
