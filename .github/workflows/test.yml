@@ -18,7 +18,7 @@ jobs:
 #    runs-on: macos-latest
 #    steps:
       - name: Run Xcodegen
-        run: xcodegen generate --spec ../project.yml
+        run: ls && xcodegen generate
 
 
     
