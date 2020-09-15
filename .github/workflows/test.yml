@@ -18,7 +18,7 @@ jobs:
 #    runs-on: macos-latest
 #    steps:
       - name: Run Xcodegen
-        run: mint run xcodegen
+        run: xcodegen generate
 
 
     
