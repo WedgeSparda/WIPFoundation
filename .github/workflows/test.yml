@@ -1,7 +1,10 @@
-jobs:
-  install_mint:
-   name: Install Mint
-   runs-on: macos-latest
-   run: brew install mint
+on:
+  push:
+    jobs:
+      install_mint:
+        name: Install Mint
+        runs-on: macos-latest
+        run: brew install mint
 
-     
+
+    
