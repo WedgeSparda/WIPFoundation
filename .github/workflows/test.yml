@@ -5,20 +5,14 @@ jobs:
     name: Install Dependencies
     runs-on: macos-latest
     steps:
-#      - name: Install Homebrew
-#        run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-#      - name: Install Mint
-#        run: brew install mint
-      - name: Install Firebase
-        run: brew install fastlane
-      - name: Install XCodeGen
-        run: brew install xcodegen
-#  execute_xcodegen:
-#    name: Execute XCodegen
-#    runs-on: macos-latest
-#    steps:
-      - name: Run Xcodegen
-        run: ls && xcodegen generate
+      - uses: actions/checkout@v1
+      - name: Install and run xcodegen
+        run: |
+          brew install xcodegen
+          xcodegen generate
+#      - name: Run Fastlane tests
+#        run: brew install fastlane
+
 
 
     
