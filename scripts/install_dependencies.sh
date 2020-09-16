@@ -7,3 +7,4 @@ xcodegen generate
 
 # Bundler
 gem install bundler
+bundle install
