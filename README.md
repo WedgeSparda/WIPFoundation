@@ -1,6 +1,6 @@
 # {**WIP**} *Core*
 
-![Run Tests Workflow](https://github.com/WedgeSparda/WIPFoundation/workflows/Run%20Tests%20Workflow/badge.svg)
+![Tests](https://github.com/WedgeSparda/WIPFoundation/workflows/Tests/badge.svg)
 
 ## Summary
 * [What is this?](#what-is-this)
