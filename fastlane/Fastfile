@@ -1,0 +1,10 @@
+default_platform(:ios)
+
+platforms = ["iOS", "tvOS", "macOS"]
+
+desc "Run the tests"
+lane :tests do
+  platforms.each do |platform|
+    run_tests(scheme: "WIPFoundation_#{platform}")
+  end 
+end
