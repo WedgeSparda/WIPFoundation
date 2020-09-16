@@ -13,6 +13,7 @@ jobs:
     name: Run tests
     runs-on: macos-latest
     steps:
+      - uses: actions/checkout@v1
       - name: Run tests
         run: scripts/run_tests.sh
 
