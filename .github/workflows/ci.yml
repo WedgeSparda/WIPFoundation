@@ -7,9 +7,14 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Install dependencies
-        run: script/install_dependencies.sh
+        run: scripts/install_dependencies.sh
+  run_tests:
+    needs: install_dependencies
+    name: Run tests
+    runs-on: macos-latest
+    steps:
       - name: Run tests
-        run: script/run_tests.sh
+        run: scripts/run_tests.sh
 
 
 
