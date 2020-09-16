@@ -1,5 +1,5 @@
 on: push
-name: Test
+name: Run Tests Workflow
 jobs:
   install_dependencies:
     name: Install Dependencies
