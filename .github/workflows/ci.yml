@@ -6,12 +6,10 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Install and run xcodegen
-        run: |
-          brew install xcodegen
-          xcodegen generate
-      - name: Run Fastlane tests
-        run: fastlane tests
+      - name: Install dependencies
+        run: script/install_dependencies.sh
+      - name: Run tests
+        run: script/run_tests.sh
 
 
 
