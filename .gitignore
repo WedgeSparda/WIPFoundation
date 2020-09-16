@@ -37,4 +37,5 @@ playground.xcworkspace
 .build/
 
 # Fastlane Test Output
+fastlane/report.xml
 fastlane/test_output/
