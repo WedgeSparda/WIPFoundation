@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
 
-fastlane tests
+bundle exec fastlane tests
