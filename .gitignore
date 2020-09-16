@@ -35,3 +35,6 @@ playground.xcworkspace
 # Package.pins
 # Package.resolved
 .build/
+
+# Fastlane Test Output
+fastlane/test_output/

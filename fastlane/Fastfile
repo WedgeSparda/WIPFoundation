@@ -1,10 +1,24 @@
 default_platform(:ios)
 
-platforms = ["iOS", "tvOS", "macOS"]
+# Private lanes
+
+private_lane :run_iOS_tests do
+  run_tests(scheme: "WIPFoundation_iOS") 
+end
+
+private_lane :run_tvOS_tests do
+  run_tests(scheme: "WIPFoundation_tvOS") 
+end
+
+private_lane :run_macOS_tests do
+  run_tests(scheme: "WIPFoundation_macOS") 
+end
+
+# Public lanes
 
 desc "Run the tests"
 lane :tests do
-  platforms.each do |platform|
-    run_tests(scheme: "WIPFoundation_#{platform}")
-  end 
+  run_macOS_tests
+  run_iOS_tests
+  run_tvOS_tests
 end

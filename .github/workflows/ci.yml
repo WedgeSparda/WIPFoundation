@@ -11,7 +11,7 @@ jobs:
           brew install xcodegen
           xcodegen generate
       - name: Run Fastlane tests
-        run: fastlane tests
+        run: bundle exec fastlane tests
 
 
 
