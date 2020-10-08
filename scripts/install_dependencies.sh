@@ -1,9 +1,11 @@
 #!/bin/bash
 set -e
 
-# Xcodegen
-brew install xcodegen
-xcodegen generate
+# Install Mint
+brew install mint
 
-# Bundler
+# Install and run Xcodegen
+mint run xcodegen
+
+# Bundler to install Fastlane
 gem install bundler
