@@ -22,7 +22,7 @@ end
 
 desc "Run the tests"
 lane :tests do
-  run_iOS_tests
   run_macOS_tests
+  run_iOS_tests
   run_tvOS_tests
 end
