@@ -1,5 +1,10 @@
 name: WIPFoundation
 fileGroups: [README.md, LICENSE.md]
+options:
+  deploymentTarget:
+    iOS: 13.0
+    tvOS: 13.0
+    macOS: 10.14
 targets:
   WIPFoundation:
     type: framework
@@ -7,10 +12,6 @@ targets:
     sources: Source
     info:
       path: Info.plist
-    deploymentTarget:
-      iOS: 14.0
-      tvOS: 14.0
-      macOS: 10.15
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: es.rpastor.wip.foundation

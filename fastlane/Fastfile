@@ -22,7 +22,7 @@ end
 
 desc "Run the tests"
 lane :tests do
-  xcversion(version: "12.0")
+  xcversion(version: "11.7")
   run_macOS_tests
   run_iOS_tests
   run_tvOS_tests
