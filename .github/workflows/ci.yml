@@ -8,14 +8,16 @@ jobs:
       - uses: actions/checkout@v1
       - name: Install dependencies
         run: scripts/install_dependencies.sh
-  run_tests:
-    needs: install_dependencies
-    name: Run tests
-    runs-on: macos-latest
-    steps:
-      - uses: actions/checkout@v1
       - name: Run tests
         run: scripts/run_tests.sh
+  # run_tests:
+  #   needs: install_dependencies
+  #   name: Run tests
+  #   runs-on: macos-latest
+  #   steps:
+  #     - uses: actions/checkout@v1
+  #     - name: Run tests
+  #       run: scripts/run_tests.sh
 
 
 
