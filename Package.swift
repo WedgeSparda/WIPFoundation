@@ -12,6 +12,6 @@ let package = Package(
     targets: [
         .target(
             name: "WIPFoundation",
-            path: "Sources"),
+            path: "Sources")
     ]
 )

@@ -1,7 +1,6 @@
 import XCTest
 @testable import WIPFoundation
 
-
 class StringTests: XCTestCase {
 
     private let testString = "THIS IS A TEST!"

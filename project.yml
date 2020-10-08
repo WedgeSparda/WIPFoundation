@@ -17,6 +17,9 @@ targets:
     scheme:
       testTargets:
         - Tests_${platform}
+    postCompileScripts:
+      - script: swiftlint
+        name: Swiftlint
   WIPFoundation_watchOS:
     type: framework
     platform: watchOS

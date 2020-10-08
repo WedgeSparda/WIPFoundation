@@ -11,15 +11,12 @@ public protocol WIPCompatibleValueType { }
 
 extension WIPCompatibleReferenceType {
     public var wip: WIPContainer<Self> {
-        get { return WIPContainer(self) }
-        set { }
+        return WIPContainer(self)
     }
 }
 
 extension WIPCompatibleValueType {
     public var wip: WIPContainer<Self> {
-        get { return WIPContainer(self) }
-        set { }
+        return WIPContainer(self)
     }
 }
-
