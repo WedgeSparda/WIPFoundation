@@ -1,5 +1,5 @@
 on: push
-name: After Push
+name: Tests
 jobs:
   install_dependencies:
     name: Install Dependencies
