@@ -2,7 +2,7 @@ on: push
 name: Tests
 jobs:
   install_dependencies:
-    name: Install Dependencies
+    name: Install Dependencies / Run Tests
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v1
@@ -10,14 +10,6 @@ jobs:
         run: scripts/install_dependencies.sh
       - name: Run tests
         run: scripts/run_tests.sh
-  # run_tests:
-  #   needs: install_dependencies
-  #   name: Run tests
-  #   runs-on: macos-latest
-  #   steps:
-  #     - uses: actions/checkout@v1
-  #     - name: Run tests
-  #       run: scripts/run_tests.sh
 
 
 
