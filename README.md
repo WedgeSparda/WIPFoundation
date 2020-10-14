@@ -1,7 +1,9 @@
 # {**WIP**} *Foundation*
 
 <div align="center">
-![Tests](https://github.com/WedgeSparda/WIPFoundation/workflows/Tests/badge.svg)
+
+<a href="https://github.com/WedgeSparda/WIPFoundation/actions?query=workflow%3ATests"><img src="https://github.com/WedgeSparda/WIPFoundation/workflows/Tests/badge.svg"/></a>
+<a href="https://swift.org/package-manager/"><img src="https://img.shields.io/badge/SPM-supported-orange.svg?style=flat"/></a>
 </div>
 
 ## Summary
