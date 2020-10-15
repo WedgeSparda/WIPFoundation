@@ -30,16 +30,32 @@ All extensions are based on the {**WIP**} *Core* namespacing approach. You can k
 + tvOS 13.0
 + Swift 5.0+ 
 
+
+In order to work with this project you need:
+
+- [XcodeGen](https://github.com/yonaskolb/XcodeGen): to create the `xcodeproj`.
+- [SwiftLint](https://github.com/realm/SwiftLint): to keep the code styling.
+- [Mint](https://github.com/yonaskolb/Mint): to install `XcodeGen` and `SwiftLint`
+- [Fastlane](https://fastlane.tools/): to run tests.
+
+
+Best option to install all these dependencies is running this command line from the project's root:
+```
+sh scripts/install_dependencies.sh
+```
+
 ## How to install
 
-### Swift Package Manager
-*Work in Progress...*
+To install the framework on your project, please use:
+
+### Swift Package Manager (Xcode 11+)
+
+1. Select File > Swift Packages > Add Package Dependency
+2. Type `https://github.com/WedgeSparda/WIPFoundation` in the "Enter package repository URL"
 
 ## How to contribute
-*Work in Progress...*
 
-## Projects using {**WIP**} *Foundation*
-*Work in Progress...*
+If you wish to contribute to the project, check the [Contributing](CONTRIBUTING.md) documentation.
 
 ## Inspiration
 
