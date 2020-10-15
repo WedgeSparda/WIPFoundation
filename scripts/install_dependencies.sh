@@ -8,7 +8,7 @@ brew install mint
 mint run xcodegen
 
 # Install SwiftLint
-mint install realm/SwiftLint
+mint install realm/SwiftLint -n
 
 # Bundler to install Fastlane
 gem install bundler
