@@ -59,5 +59,5 @@ If you wish to contribute to the project, check the [Contributing](CONTRIBUTING.
 
 ## Inspiration
 
-The inspiration for this solution came 100% from [Kingfisher](https://github.com/onevcat/Kingfisher), an amazing Swift library for downloading and caching images.
+The inspiration for **{WIP}** *Core* namespacing came 100% from [Kingfisher](https://github.com/onevcat/Kingfisher), an amazing Swift library for downloading and caching images.
 
