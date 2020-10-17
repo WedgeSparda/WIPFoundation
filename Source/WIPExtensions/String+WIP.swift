@@ -30,9 +30,7 @@ public extension WIPContainer where T == String {
     var base64Encoded: String? {
         return type.data(using: .utf8)?.base64EncodedString()
     }
-    #endif
 
-    #if canImport(Foundation)
     var base64Decoded: String? {
         guard let data = Data(base64Encoded: type, options: []) else {
             return nil
