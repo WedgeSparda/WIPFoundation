@@ -20,6 +20,11 @@ This way you avoid any collision with other frameworks extending the same type. 
 
 ## How to use it
 
+First, import the framework
+
+```swift
+import WIPFoundation
+```
 Depending on the type you want to extend, value type (String, Struct...) or reference type (Classes), you need to use one of these:
 
 ```swift
