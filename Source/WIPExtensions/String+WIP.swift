@@ -24,6 +24,8 @@ import Foundation
 
 extension String: WIPCompatibleValueType {}
 
+// MARK: - All Platforms
+
 public extension WIPContainer where T == String {
 
     /// String value has any letter
@@ -95,29 +97,6 @@ public extension WIPContainer where T == String {
         return type.trimmingCharacters(in: .whitespacesAndNewlines)
     }
 
-    /// Basic match of the current string with email regular expression.
-    ///
-    /// - Parameters: stricted: if true it doesn't let email like user+1@mail.com.
-    func isValidEmail(stricted: Bool = false) -> Bool {
-        let regExp: String = {
-            if stricted {
-                return "^[A-Z0-9a-z\\._%-]+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2,4}$"
-            } else {
-                return "^[A-Z0-9a-z\\._%+-]+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2,4}$"
-            }
-        }()
-
-        let emailPredicate = NSPredicate(format: "SELF MATCHES %@", regExp)
-        return emailPredicate.evaluate(with: type)
-    }
-
-    /// Basic match of the current string with HTTP URL regular expression.
-    var isValidURL: Bool {
-        let regExp = "((?:http|https)://)?(?:www\\.)?[\\w\\d\\-_]+\\.\\w{2,3}(\\.\\w{2})?(/(?<=/)(?:[\\w\\d\\-./_]+)?)?"
-        let predicate = NSPredicate(format: "SELF MATCHES %@", regExp)
-        return predicate.evaluate(with: type)
-    }
-
     /// Date object based on the current string, if it represents a Date.
     ///
     /// - Parameters:
@@ -155,3 +134,34 @@ public extension WIPContainer where T == String {
         }
     }
 }
+
+// MARK: - Without Linux Support
+// These extended helpers uses core libs that don't have Linux suport yet
+// Check https://github.com/apple/swift-corelibs-foundation for more info
+
+#if !os(Linux)
+public extension WIPContainer where T == String {
+    /// Basic match of the current string with email regular expression.
+    ///
+    /// - Parameters: stricted: if true it doesn't let email like user+1@mail.com.
+    func isValidEmail(stricted: Bool = false) -> Bool {
+        let regExp: String = {
+            if stricted {
+                return "^[A-Z0-9a-z\\._%-]+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2,4}$"
+            } else {
+                return "^[A-Z0-9a-z\\._%+-]+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2,4}$"
+            }
+        }()
+
+        let emailPredicate = NSPredicate(format: "SELF MATCHES %@", regExp)
+        return emailPredicate.evaluate(with: type)
+    }
+
+    /// Basic match of the current string with HTTP URL regular expression.
+    var isValidURL: Bool {
+        let regExp = "((?:http|https)://)?(?:www\\.)?[\\w\\d\\-_]+\\.\\w{2,3}(\\.\\w{2})?(/(?<=/)(?:[\\w\\d\\-./_]+)?)?"
+        let predicate = NSPredicate(format: "SELF MATCHES %@", regExp)
+        return predicate.evaluate(with: type)
+    }
+}
+#endif

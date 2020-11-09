@@ -17,7 +17,10 @@ let package = Package(
         .testTarget(
             name: "WIPFoundationTests",
             dependencies: ["WIPFoundation"],
-            path: "Tests"
+            path: "Tests", 
+            exclude: [
+                "Info.plist"
+            ]
         )
     ],
     swiftLanguageVersions: [.v5]

@@ -61,19 +61,6 @@ class StringTests: XCTestCase {
         XCTAssertEqual(given.wip.trimmed, expected)
     }
 
-    func testValidEmail() {
-        let email = "foaisdhfoiasdfaoisdf"
-        XCTAssertFalse(email.wip.isValidEmail())
-    }
-
-    func testValidURL() {
-        let givenValidURL = "http://www.google.es"
-        let givenInvalidURL = "/agusiha7bgu/usvukdsvkua/bj"
-
-        XCTAssertTrue(givenValidURL.wip.isValidURL)
-        XCTAssertFalse(givenInvalidURL.wip.isValidURL)
-    }
-
     func testStringToDate() {
         let given = "10/07/1981"
         let expected = given.wip.date(withFormat: "dd/MM/yyyy")
@@ -95,7 +82,25 @@ class StringTests: XCTestCase {
         XCTAssertEqual(given.wip.nsrange.location, 0)
     }
 
-    static let allTests = [
+    // MARK: - Without Linux Support
+    
+    #if !os(Linux)
+    func testValidEmail() {
+        let email = "foaisdhfoiasdfaoisdf"
+
+        XCTAssertFalse(email.wip.isValidEmail())
+    }
+
+    func testValidURL() {
+        let givenValidURL = "http://www.google.es"
+        let givenInvalidURL = "/agusiha7bgu/usvukdsvkua/bj"
+
+        XCTAssertTrue(givenValidURL.wip.isValidURL)
+        XCTAssertFalse(givenInvalidURL.wip.isValidURL)
+    }
+    #endif
+
+    static let linuxSuportedTests = [
         ("testStringHasLetters", testStringHasLetters),
         ("testStringHasNumbers", testStringHasNumbers),
         ("testStringIsAlphabetic", testStringIsAlphabetic),
@@ -105,10 +110,13 @@ class StringTests: XCTestCase {
         ("testBase64Decode", testBase64Decode),
         ("testURLEncoding", testURLEncoding),
         ("testTrimming", testTrimming),
-        ("testValidEmail", testValidEmail),
-        ("testValidURL", testValidURL),
         ("testStringToDate", testStringToDate),
         ("testIncorrectStringToDate", testIncorrectStringToDate),
         ("testNSRange", testNSRange)
+    ]
+
+    static let linuxUnsupportedTests = [
+        ("testValidEmail", testValidEmail),
+        ("testValidURL", testValidURL)
     ]
 }
