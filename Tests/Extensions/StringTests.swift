@@ -82,8 +82,23 @@ class StringTests: XCTestCase {
         XCTAssertEqual(given.wip.nsrange.location, 0)
     }
 
+    static let linuxSupportedTests = [
+        ("testStringHasLetters", testStringHasLetters),
+        ("testStringHasNumbers", testStringHasNumbers),
+        ("testStringIsAlphabetic", testStringIsAlphabetic),
+        ("testStringIsAlphaNumeric", testStringIsAlphaNumeric),
+        ("testStringIsNumeric", testStringIsNumeric),
+        ("testBase64Encode", testBase64Encode),
+        ("testBase64Decode", testBase64Decode),
+        ("testURLEncoding", testURLEncoding),
+        ("testTrimming", testTrimming),
+        ("testStringToDate", testStringToDate),
+        ("testIncorrectStringToDate", testIncorrectStringToDate),
+        ("testNSRange", testNSRange),
+    ]
+
     // MARK: - Without Linux Support
-    
+
     #if !os(Linux)
     func testValidEmail() {
         let email = "foaisdhfoiasdfaoisdf"
@@ -98,25 +113,10 @@ class StringTests: XCTestCase {
         XCTAssertTrue(givenValidURL.wip.isValidURL)
         XCTAssertFalse(givenInvalidURL.wip.isValidURL)
     }
-    #endif
-
-    static let linuxSuportedTests = [
-        ("testStringHasLetters", testStringHasLetters),
-        ("testStringHasNumbers", testStringHasNumbers),
-        ("testStringIsAlphabetic", testStringIsAlphabetic),
-        ("testStringIsAlphaNumeric", testStringIsAlphaNumeric),
-        ("testStringIsNumeric", testStringIsNumeric),
-        ("testBase64Encode", testBase64Encode),
-        ("testBase64Decode", testBase64Decode),
-        ("testURLEncoding", testURLEncoding),
-        ("testTrimming", testTrimming),
-        ("testStringToDate", testStringToDate),
-        ("testIncorrectStringToDate", testIncorrectStringToDate),
-        ("testNSRange", testNSRange)
-    ]
 
     static let linuxUnsupportedTests = [
         ("testValidEmail", testValidEmail),
         ("testValidURL", testValidURL)
     ]
+    #endif
 }
