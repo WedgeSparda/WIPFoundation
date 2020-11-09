@@ -3,15 +3,6 @@ name: CI
 on: push
 
 jobs:
-#   install_dependencies:
-#     name: Install Dependencies / Run Tests
-#     runs-on: macos-latest
-#     steps:
-#       - uses: actions/checkout@v1
-#       - name: Install dependencies
-#         run: scripts/install_dependencies.sh
-#       - name: Run tests
-#         run: scripts/run_tests.sh
 
   iOS:
     name: Test iOS

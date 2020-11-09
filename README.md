@@ -33,10 +33,10 @@ All extensions are based on the {**WIP**} *Core* namespacing approach. You can k
 
 In order to work with this project you need:
 
-- [XcodeGen](https://github.com/yonaskolb/XcodeGen): to create the `xcodeproj`.
+- [XcodeGen](https://github.com/yonaskolb/XcodeGen): to manipulate the `xcodeproj`.
 - [SwiftLint](https://github.com/realm/SwiftLint): to keep the code styling.
 - [Mint](https://github.com/yonaskolb/Mint): to install `XcodeGen` and `SwiftLint`
-- [Fastlane](https://fastlane.tools/): to run tests.
+- [Fastlane](https://fastlane.tools/): to run tests and more.
 
 
 Best option to install all these dependencies is running this command line from the project's root:
@@ -48,7 +48,7 @@ sh scripts/install_dependencies.sh
 
 To install the framework on your project, please use:
 
-### Swift Package Manager (Xcode 11+)
+### Swift Package Manager (Xcode 12+)
 
 1. Select File > Swift Packages > Add Package Dependency
 2. Type `https://github.com/WedgeSparda/WIPFoundation` in the "Enter package repository URL"
