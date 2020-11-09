@@ -1,18 +1,28 @@
-name: Tests
+name: CI
+
 on: push
-env:
-  DEVELOPER_DIR: /Applications/Xcode_12.1.app/Contents/Developer
+
 jobs:
-  install_dependencies:
-    name: Install Dependencies / Run Tests
-    runs-on: macos-latest
+#   install_dependencies:
+#     name: Install Dependencies / Run Tests
+#     runs-on: macos-latest
+#     steps:
+#       - uses: actions/checkout@v1
+#       - name: Install dependencies
+#         run: scripts/install_dependencies.sh
+#       - name: Run tests
+#         run: scripts/run_tests.sh
+
+  iOS:
+    name: Test iOS
+    runs-on: macOS-latest
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_12.1.app/Contents/Developer
+    strategy:
+      matrix:
+        destination: ["OS=14.0,name=iPhone 11 Pro", "OS=13.0,name=iPhone XS"]
     steps:
-      - uses: actions/checkout@v1
-      - name: Install dependencies
-        run: scripts/install_dependencies.sh
-      - name: Run tests
-        run: scripts/run_tests.sh
-
-
-
+      - uses: actions/checkout@v2
+      - name: iOS - ${{ matrix.destination }}
+        run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "Alamofire.xcodeproj" -scheme "Alamofire iOS" -destination "${{ matrix.destination }}" clean test | xcpretty
     
