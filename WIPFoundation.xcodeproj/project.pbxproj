@@ -98,7 +98,7 @@
 		82DE6A46234917E9ABF5B5C0 /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
 		884F2A7C9E2AE308F7E0731E /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		9AC893375DA9DB029F91A1D8 /* Tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C94B398ADAA6743BFC00A238 /* WIPFoundation_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WIPFoundation_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C94B398ADAA6743BFC00A238 /* WIPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC07BD0A7F1E41B878F48F7F /* WIPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4F646319F6E1F6A0512689 /* WIPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB50411B024ADAB260D2DE3 /* Tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,7 +194,7 @@
 				9AC893375DA9DB029F91A1D8 /* Tests.xctest */,
 				6EB8025A2EF51458D2381E34 /* Tests.xctest */,
 				EFB50411B024ADAB260D2DE3 /* Tests.xctest */,
-				C94B398ADAA6743BFC00A238 /* WIPFoundation_watchOS.framework */,
+				C94B398ADAA6743BFC00A238 /* WIPFoundation.framework */,
 				DC4F646319F6E1F6A0512689 /* WIPFoundation.framework */,
 				DC07BD0A7F1E41B878F48F7F /* WIPFoundation.framework */,
 				655ED1B82D2CD11E0F196C84 /* WIPFoundation.framework */,
@@ -217,7 +217,7 @@
 			);
 			name = WIPFoundation_watchOS;
 			productName = WIPFoundation_watchOS;
-			productReference = C94B398ADAA6743BFC00A238 /* WIPFoundation_watchOS.framework */;
+			productReference = C94B398ADAA6743BFC00A238 /* WIPFoundation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		170480A34B6A5FA2F42779A4 /* Tests_macOS */ = {
@@ -505,6 +505,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = es.rpastor.wip.foundation;
+				PRODUCT_NAME = WIPFoundation;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -765,6 +766,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = es.rpastor.wip.foundation;
+				PRODUCT_NAME = WIPFoundation;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
