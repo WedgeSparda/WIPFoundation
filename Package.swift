@@ -1,17 +1,19 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.3
 import PackageDescription
 
 let package = Package(
     name: "WIPFoundation",
-    platforms: [
-        .iOS(.v14), .macOS(.v10_15), .tvOS(.v14), .watchOS(.v7)
-    ],
     products: [
-        .library(name: "WIPFoundation", targets: ["WIPFoundation"])
+        .library(
+            name: "WIPFoundation", 
+            targets: ["WIPFoundation"]
+        )
     ],
     targets: [
         .target(
             name: "WIPFoundation",
-            path: "Sources")
-    ]
+            path: "Sources"
+        )
+    ],
+    swiftLanguageVersions: [.v5]
 )
