@@ -25,4 +25,26 @@ jobs:
       - uses: actions/checkout@v2
       - name: iOS - ${{ matrix.destination }}
         run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "WIPFoundation.xcodeproj" -scheme "WIPFoundation_iOS" -destination "${{ matrix.destination }}" clean test | xcpretty
-    
+
+  macOS:
+    name: Test macOS
+    runs-on: macOS-latest 
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_12.1.app/Contents/Developer
+    steps:
+      - uses: actions/checkout@v2
+      - name: macOS (10.15)
+        run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "WIPFoundation.xcodeproj" -scheme "WIPFoundation_macOS" -destination "platform=macOS" clean test | xcpretty
+
+  tvOS:
+    name: Test tvOS 
+    runs-on: macOS-latest
+    env: 
+      DEVELOPER_DIR: /Applications/Xcode_12.app/Contents/Developer
+    strategy:
+      matrix:
+        destination: ["OS=14.0,name=Apple TV 4K"]
+    steps:
+      - uses: actions/checkout@v2
+      - name: tvOS - ${{ matrix.destination }}
+        run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "WIPFoundation.xcodeproj" -scheme "WIPFoundation_tvOS" -destination "${{ matrix.destination }}" clean test | xcpretty
