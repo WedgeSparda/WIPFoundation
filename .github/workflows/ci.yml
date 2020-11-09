@@ -1,5 +1,7 @@
-on: push
 name: Tests
+on: push
+env:
+  DEVELOPER_DIR: /Applications/Xcode_12.1.app/Contents/Developer
 jobs:
   install_dependencies:
     name: Install Dependencies / Run Tests

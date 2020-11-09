@@ -3,9 +3,6 @@ import XCTest
 
 class StringTests: XCTestCase {
 
-    private let testString = "THIS IS A TEST!"
-    private let base64EncodedTestString = "VEhJUyBJUyBBIFRFU1Qh"
-
     func testStringHasLetters() {
         XCTAssertTrue("abc".wip.hasLetters)
         XCTAssertTrue("abc123".wip.hasLetters)
@@ -37,12 +34,64 @@ class StringTests: XCTestCase {
     }
 
     func testBase64Encode() {
-        XCTAssertEqual(testString.wip.base64Encoded,
-                       base64EncodedTestString)
+        let given = "THIS IS A TEST!"
+        let expected = "VEhJUyBJUyBBIFRFU1Qh"
+
+        XCTAssertEqual(given.wip.base64Encoded, expected)
     }
 
     func testBase64Decode() {
-        XCTAssertEqual(base64EncodedTestString.wip.base64Decoded,
-                       testString)
+        let given = "VEhJUyBJUyBBIFRFU1Qh"
+        let expected = "THIS IS A TEST!"
+
+        XCTAssertEqual(given.wip.base64Decoded, expected)
+    }
+
+    func testURLEncoding() {
+        let given = "Text for URL QUERY with weird characters like 'ñá'"
+        let expected = "Text%20for%20URL%20QUERY%20with%20weird%20characters%20like%20\'%C3%B1%C3%A1\'"
+
+        XCTAssertEqual(given.wip.encodedForURLQuery, expected)
+    }
+
+    func testTrimming() {
+        let given = "  Trimm this   "
+        let expected = "Trimm this"
+
+        XCTAssertEqual(given.wip.trimmed, expected)
+    }
+
+    func testValidEmail() {
+        let email = "foaisdhfoiasdfaoisdf"
+        XCTAssertFalse(email.wip.isValidEmail())
+    }
+
+    func testValidURL() {
+        let givenValidURL = "http://www.google.es"
+        let givenInvalidURL = "/agusiha7bgu/usvukdsvkua/bj"
+
+        XCTAssertTrue(givenValidURL.wip.isValidURL)
+        XCTAssertFalse(givenInvalidURL.wip.isValidURL)
+    }
+
+    func testStringToDate() {
+        let given = "10/07/1981"
+        let expected = given.wip.date(withFormat: "dd/MM/yyyy")
+
+        XCTAssertNotNil(expected)
+    }
+
+    func testIncorrectStringToDate() {
+        let given = "This is not a date"
+        let expected = given.wip.date(withFormat: "dd/MM/yyyy")
+
+        XCTAssertNil(expected)
+    }
+
+    func testNSRange() {
+        let given = "This is a text"
+
+        XCTAssertEqual(given.wip.nsrange.length, 14)
+        XCTAssertEqual(given.wip.nsrange.location, 0)
     }
 }

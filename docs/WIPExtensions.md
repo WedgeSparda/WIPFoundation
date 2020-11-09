@@ -12,32 +12,17 @@ First import the framework with
 import WIPFoundation
 ```
 
-Then, if the type is compatible with {**WIP**} *Extensions*, use the `wip` namespace to access the available functions and/or variables. For example:
+Then, if the type is compatible with {**WIP**} *Extensions*, use the `wip` namespace to access the available functions and/or variables. 
+
+For example:
 
 ```swift
 var value: String = "Hello World!"
 value.wip.hasLetters // true
 ```
 
+Check the source code to see documented comments for each extension.
+
 ## List of extended types
 
-- [String](#string)
-
-## String
-
-Here is the list of available helpers for the `String` type:
-```swift
-hasLetters // String value has any letter.
-
-hasNumbers // String value has any numer.
-
-isAlphabetic // String value ONLY has letters.
-
-isAlphanumeric // String value has letters AND numbers.
-
-isNumeric // String value ONLY has numbers.
-
-base64Encoded // String representation of the Base64 for the value.
-
-base64Decoded // String value of a previous Base64 encoded text.
-```
+- [String](https://github.com/WedgeSparda/WIPFoundation/blob/master/Source/WIPExtensions/String%2BWIP.swift)
