@@ -1,41 +1,41 @@
-name: WIPFoundation
-fileGroups: [README.md, LICENSE.md]
-options:
-  deploymentTarget:
-    iOS: 14.0
-    tvOS: 14.0
-    macOS: 10.15
-    watchOS: 7.0
-targets:
-  WIPFoundation:
-    type: framework
-    platform: [iOS, tvOS, macOS]
-    sources: Source
-    info:
-      path: Info.plist
-    settings:
-      base:
-        PRODUCT_BUNDLE_IDENTIFIER: es.rpastor.wip.foundation
-    scheme:
-      testTargets:
-        - Tests_${platform}
-    postCompileScripts:
-      - script: swiftlint
-        name: Swiftlint
-  WIPFoundation_watchOS:
-    type: framework
-    platform: watchOS
-    source: Source
-    info:
-      path: Info.plist
-    settings:
-      base:
-        PRODUCT_BUNDLE_IDENTIFIER: es.rpastor.wip.foundation
-  Tests: 
-    type: bundle.unit-test
-    platform: [iOS, tvOS, macOS]
-    sources: Tests
-    info:
-      path: Tests/Info.plist
-    dependencies:
-      - target: WIPFoundation_${platform}
+# name: WIPFoundation
+# fileGroups: [README.md, LICENSE.md]
+# options:
+#   deploymentTarget:
+#     iOS: 14.0
+#     tvOS: 14.0
+#     macOS: 10.15
+#     watchOS: 7.0
+# targets:
+#   WIPFoundation:
+#     type: framework
+#     platform: [iOS, tvOS, macOS]
+#     sources: Source
+#     info:
+#       path: Info.plist
+#     settings:
+#       base:
+#         PRODUCT_BUNDLE_IDENTIFIER: es.rpastor.wip.foundation
+#     scheme:
+#       testTargets:
+#         - Tests_${platform}
+#     postCompileScripts:
+#       - script: swiftlint
+#         name: Swiftlint
+#   WIPFoundation_watchOS:
+#     type: framework
+#     platform: watchOS
+#     source: Source
+#     info:
+#       path: Info.plist
+#     settings:
+#       base:
+#         PRODUCT_BUNDLE_IDENTIFIER: es.rpastor.wip.foundation
+#   Tests: 
+#     type: bundle.unit-test
+#     platform: [iOS, tvOS, macOS]
+#     sources: Tests
+#     info:
+#       path: Tests/Info.plist
+#     dependencies:
+#       - target: WIPFoundation_${platform}

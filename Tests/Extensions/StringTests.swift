@@ -94,4 +94,21 @@ class StringTests: XCTestCase {
         XCTAssertEqual(given.wip.nsrange.length, 14)
         XCTAssertEqual(given.wip.nsrange.location, 0)
     }
+
+    static let allTests = [
+        ("testStringHasLetters", testStringHasLetters),
+        ("testStringHasNumbers", testStringHasNumbers),
+        ("testStringIsAlphabetic", testStringIsAlphabetic),
+        ("testStringIsAlphaNumeric", testStringIsAlphaNumeric),
+        ("testStringIsNumeric", testStringIsNumeric),
+        ("testBase64Encode", testBase64Encode),
+        ("testBase64Decode", testBase64Decode),
+        ("testURLEncoding", testURLEncoding),
+        ("testTrimming", testTrimming),
+        ("testValidEmail", testValidEmail),
+        ("testValidURL", testValidURL),
+        ("testStringToDate", testStringToDate),
+        ("testIncorrectStringToDate", testIncorrectStringToDate),
+        ("testNSRange", testNSRange)
+    ]
 }

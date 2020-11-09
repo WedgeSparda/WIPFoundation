@@ -7,17 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05D636CE82A584F0D36A279A /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4B23266D98146201BA091 /* XCTestManifests.swift */; };
 		18F5FE628051EA7A726BB61D /* WIPFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC4F646319F6E1F6A0512689 /* WIPFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1984A4C4EC2CFE6531D3A888 /* WIPCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBFD758F6C844741F3A8D2 /* WIPCompatibleType.swift */; };
 		20B11CE93ECBA83E5CED972C /* WIPFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 655ED1B82D2CD11E0F196C84 /* WIPFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2A5EF6DB40CAB64A22CA8B30 /* WIPFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC07BD0A7F1E41B878F48F7F /* WIPFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2B38DB3E7E5DA66BD1540027 /* WIPCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBFD758F6C844741F3A8D2 /* WIPCompatibleType.swift */; };
+		2CB0355DB28937785BD33680 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4B23266D98146201BA091 /* XCTestManifests.swift */; };
 		2F34DDF6CC5D4BDD5CB514F2 /* String+WIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA4BEACFEB01BADA3618D0 /* String+WIP.swift */; };
 		30DEF2F6FBACC2C6933A4EAE /* String+WIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA4BEACFEB01BADA3618D0 /* String+WIP.swift */; };
 		34E542A94179F7296E340F07 /* WIPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655ED1B82D2CD11E0F196C84 /* WIPFoundation.framework */; };
 		5289AD44DA40F8BF419493F0 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE6A46234917E9ABF5B5C0 /* StringTests.swift */; };
 		565E7EF3A5D94C4989A3AB97 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE6A46234917E9ABF5B5C0 /* StringTests.swift */; };
 		66CF05BE47285D6007A4D027 /* WIPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC07BD0A7F1E41B878F48F7F /* WIPFoundation.framework */; };
+		6D6165EADA39EF98C067CD61 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4B23266D98146201BA091 /* XCTestManifests.swift */; };
 		75E1DF3E58288B21FA724934 /* WIPCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBFD758F6C844741F3A8D2 /* WIPCompatibleType.swift */; };
 		859D8C655A89FCB6503D9355 /* String+WIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA4BEACFEB01BADA3618D0 /* String+WIP.swift */; };
 		8CF07B747669176A1087E888 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE6A46234917E9ABF5B5C0 /* StringTests.swift */; };
@@ -86,13 +89,15 @@
 
 /* Begin PBXFileReference section */
 		2BCBFD758F6C844741F3A8D2 /* WIPCompatibleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIPCompatibleType.swift; sourceTree = "<group>"; };
+		620CF304255988F4007027AE /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
+		64C4B23266D98146201BA091 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		655ED1B82D2CD11E0F196C84 /* WIPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EB8025A2EF51458D2381E34 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF5F07CA380B9296968D344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8140A23CD601AB0BBAED2E2A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		82DE6A46234917E9ABF5B5C0 /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
 		884F2A7C9E2AE308F7E0731E /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
-		9AC893375DA9DB029F91A1D8 /* Tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AC893375DA9DB029F91A1D8 /* Tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94B398ADAA6743BFC00A238 /* WIPFoundation_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WIPFoundation_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC07BD0A7F1E41B878F48F7F /* WIPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4F646319F6E1F6A0512689 /* WIPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +146,7 @@
 			children = (
 				884F2A7C9E2AE308F7E0731E /* LICENSE.md */,
 				8140A23CD601AB0BBAED2E2A /* README.md */,
+				620CF304255988F4007027AE /* LinuxMain.swift */,
 				AE851B23AA2C85D691B3C319 /* Source */,
 				A7232755BE11B3FA4E7D3060 /* Tests */,
 				DDD5F6FE05B0759B005FC35E /* Products */,
@@ -167,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				7CF5F07CA380B9296968D344 /* Info.plist */,
+				64C4B23266D98146201BA091 /* XCTestManifests.swift */,
 				6AF8F49D1134A7CAB6ACD2F1 /* Extensions */,
 			);
 			path = Tests;
@@ -322,8 +329,6 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1200;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = 1CD22FB14110B48D1F020DCA /* Build configuration list for PBXProject "WIPFoundation" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -420,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CF07B747669176A1087E888 /* StringTests.swift in Sources */,
+				2CB0355DB28937785BD33680 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +443,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				565E7EF3A5D94C4989A3AB97 /* StringTests.swift in Sources */,
+				6D6165EADA39EF98C067CD61 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5289AD44DA40F8BF419493F0 /* StringTests.swift in Sources */,
+				05D636CE82A584F0D36A279A /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,14 +5,19 @@ let package = Package(
     name: "WIPFoundation",
     products: [
         .library(
-            name: "WIPFoundation", 
+            name: "WIPFoundation",
             targets: ["WIPFoundation"]
         )
     ],
     targets: [
         .target(
             name: "WIPFoundation",
-            path: "Sources"
+            path: "Source"
+        ),
+        .testTarget(
+            name: "WIPFoundationTests",
+            dependencies: ["WIPFoundation"],
+            path: "Tests"
         )
     ],
     swiftLanguageVersions: [.v5]

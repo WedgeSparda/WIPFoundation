@@ -1,6 +1,9 @@
 name: CI
 
-on: push
+on: 
+  push:
+    branches:
+      - master
 
 jobs:
 
@@ -13,7 +16,8 @@ jobs:
       matrix:
         destination: ["OS=14.1,name=iPhone 11 Pro"]
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: iOS - ${{ matrix.destination }}
         run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "WIPFoundation.xcodeproj" -scheme "WIPFoundation_iOS" -destination "${{ matrix.destination }}" clean test | xcpretty
 
@@ -23,7 +27,8 @@ jobs:
     env:
       DEVELOPER_DIR: /Applications/Xcode_12.1.app/Contents/Developer
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: macOS (Swift 5.3)
         run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "WIPFoundation.xcodeproj" -scheme "WIPFoundation_macOS" -destination "platform=macOS" clean test | xcpretty
 
@@ -36,7 +41,8 @@ jobs:
       matrix:
         destination: ["OS=14.0,name=Apple TV 4K"]
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: tvOS - ${{ matrix.destination }}
         run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "WIPFoundation.xcodeproj" -scheme "WIPFoundation_tvOS" -destination "${{ matrix.destination }}" clean test | xcpretty
 
@@ -49,6 +55,21 @@ jobs:
       matrix:
         destination: ["OS=7.0,name=Apple Watch Series 5 - 44mm"]
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: watchOS - ${{ matrix.destination }}
         run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "WIPFoundation.xcodeproj" -scheme "WIPFoundation_watchOS" -destination "${{ matrix.destination }}" clean build | xcpretty
+
+  Linux:
+    name: Build Linux
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Swift
+        uses: sersoft-gmbh/SwiftyActions@v1
+        with:
+          release-version: 5.3
+      - name: Build Linux
+        run: |
+          swift build
+          swift test
