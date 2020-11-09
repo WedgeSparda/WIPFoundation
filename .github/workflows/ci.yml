@@ -17,14 +17,14 @@ jobs:
       - name: iOS - ${{ matrix.destination }}
         run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "WIPFoundation.xcodeproj" -scheme "WIPFoundation_iOS" -destination "${{ matrix.destination }}" clean test | xcpretty
 
-  macOS:
+  macOS_5_3:
     name: Test macOS
     runs-on: macOS-latest 
     env:
       DEVELOPER_DIR: /Applications/Xcode_12.1.app/Contents/Developer
     steps:
       - uses: actions/checkout@v2
-      - name: macOS (10.15)
+      - name: macOS (Swift 5.3)
         run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "WIPFoundation.xcodeproj" -scheme "WIPFoundation_macOS" -destination "platform=macOS" clean test | xcpretty
 
   tvOS:
