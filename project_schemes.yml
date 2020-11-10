@@ -32,6 +32,6 @@ schemes:
 
   WIPFoundation watchOS:
     templates:
-      - Framework
+      - "Framework No Tests"
     templateAttributes:
       target: "WIPFoundation watchOS"

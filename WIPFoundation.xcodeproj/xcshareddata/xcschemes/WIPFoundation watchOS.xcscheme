@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "66354D9C06E680994BA07D92"
+               BlueprintIdentifier = "FC40D2C0DB7644970A6963B9"
                BuildableName = "WIPFoundation.framework"
-               BlueprintName = "WIPFoundation tvOS"
+               BlueprintName = "WIPFoundation watchOS"
                ReferencedContainer = "container:WIPFoundation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -30,23 +30,13 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "66354D9C06E680994BA07D92"
+            BlueprintIdentifier = "FC40D2C0DB7644970A6963B9"
             BuildableName = "WIPFoundation.framework"
-            BlueprintName = "WIPFoundation tvOS"
+            BlueprintName = "WIPFoundation watchOS"
             ReferencedContainer = "container:WIPFoundation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D32E4D9B7F6C4BFD9889E60B"
-               BuildableName = "WIPFoundation tvOS Tests.xctest"
-               BlueprintName = "WIPFoundation tvOS Tests"
-               ReferencedContainer = "container:WIPFoundation.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -62,9 +52,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "66354D9C06E680994BA07D92"
+            BlueprintIdentifier = "FC40D2C0DB7644970A6963B9"
             BuildableName = "WIPFoundation.framework"
-            BlueprintName = "WIPFoundation tvOS"
+            BlueprintName = "WIPFoundation watchOS"
             ReferencedContainer = "container:WIPFoundation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -79,9 +69,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "66354D9C06E680994BA07D92"
+            BlueprintIdentifier = "FC40D2C0DB7644970A6963B9"
             BuildableName = "WIPFoundation.framework"
-            BlueprintName = "WIPFoundation tvOS"
+            BlueprintName = "WIPFoundation watchOS"
             ReferencedContainer = "container:WIPFoundation.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
