@@ -9,6 +9,7 @@ targetTemplates:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: es.rpastor.wip.foundation
+        PRODUCT_NAME: WIPFoundation
     postCompileScripts:
       - script: swiftlint
         name: Swiftlint

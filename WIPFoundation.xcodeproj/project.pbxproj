@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		089974B5595BC37C1D59DA7F /* WIPFoundation iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66CB3B51B5829BB20E22E6B6 /* WIPFoundation iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0E0D308DD69CD285F142E4E8 /* WIPFoundation iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CB3B51B5829BB20E22E6B6 /* WIPFoundation iOS.framework */; };
 		18687DA8514A9AB2D604A533 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4B23266D98146201BA091 /* XCTestManifests.swift */; };
 		250195B5538E61ABC7EFA4AE /* WIPCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBFD758F6C844741F3A8D2 /* WIPCompatibleType.swift */; };
 		395ECC8FD4C0FF1D09032B73 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4B23266D98146201BA091 /* XCTestManifests.swift */; };
@@ -16,36 +18,76 @@
 		602BDF650A98C6042972C7C2 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE6A46234917E9ABF5B5C0 /* StringTests.swift */; };
 		61A2DE775FCDABD387DB13AC /* String+WIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA4BEACFEB01BADA3618D0 /* String+WIP.swift */; };
 		848CDD3DD1C1C74D866D6EAE /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE6A46234917E9ABF5B5C0 /* StringTests.swift */; };
+		8FBA366A5125AB5A44B42EE6 /* WIPFoundation macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269151E72449EBF0FE2FBF04 /* WIPFoundation macOS.framework */; };
 		9081258E77BF4A6A04710146 /* String+WIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA4BEACFEB01BADA3618D0 /* String+WIP.swift */; };
+		93AF40AA58AF0595661FC2E8 /* WIPFoundation tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1FCE0432B8508717172E37 /* WIPFoundation tvOS.framework */; };
 		96210467CC3DBA4A40AE8DEE /* WIPCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBFD758F6C844741F3A8D2 /* WIPCompatibleType.swift */; };
 		97E925EE0B032520364E935A /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4B23266D98146201BA091 /* XCTestManifests.swift */; };
 		9A9A8662186D4F3EC1978EE0 /* WIPCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBFD758F6C844741F3A8D2 /* WIPCompatibleType.swift */; };
+		A6B809AD009D69F35C0C1BDB /* WIPFoundation macOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 269151E72449EBF0FE2FBF04 /* WIPFoundation macOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B997635BB46D142C93279397 /* String+WIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA4BEACFEB01BADA3618D0 /* String+WIP.swift */; };
+		D65FF2E14D9A2E338091CFD9 /* WIPFoundation tvOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF1FCE0432B8508717172E37 /* WIPFoundation tvOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		43AF0F15E4AC29D04C1153C1 /* PBXContainerItemProxy */ = {
+		A2D41DFA161A78149AC43D74 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 17B11B32A29CDA419109983D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D32E4D9B7F6C4BFD9889E60B;
-			remoteInfo = "WIPFoundation tvOS Tests";
+			remoteGlobalIDString = 66354D9C06E680994BA07D92;
+			remoteInfo = "WIPFoundation tvOS";
 		};
-		F53A62945496F4C838D798C5 /* PBXContainerItemProxy */ = {
+		B7B4EB8DDF23E3B62A3E1646 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 17B11B32A29CDA419109983D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F4204646B5EE2E861C52E93C;
-			remoteInfo = "WIPFoundation macOS Tests";
+			remoteGlobalIDString = F422BF5FB222BAB883308154;
+			remoteInfo = "WIPFoundation macOS";
 		};
-		F6316EB080423FA560EE998D /* PBXContainerItemProxy */ = {
+		E81D3111B634B2E8E8531A40 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 17B11B32A29CDA419109983D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DAC32C922344ADF05605219D;
-			remoteInfo = "WIPFoundation iOS Tests";
+			remoteGlobalIDString = 2B4B301B8DB0BED6BA4613B0;
+			remoteInfo = "WIPFoundation iOS";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		062F32BE1C9DEC3E5D19BA5F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A6B809AD009D69F35C0C1BDB /* WIPFoundation macOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B01FF7EAB5FC81DFD31BAE8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				089974B5595BC37C1D59DA7F /* WIPFoundation iOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0654245EB4E32F65A439AA8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D65FF2E14D9A2E338091CFD9 /* WIPFoundation tvOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		269151E72449EBF0FE2FBF04 /* WIPFoundation macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "WIPFoundation macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +106,33 @@
 		EAA2B02CD11A3DCBA118B0F1 /* WIPFoundation tvOS Tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = "WIPFoundation tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFCA4BEACFEB01BADA3618D0 /* String+WIP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+WIP.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14C5933426D041E41FA32346 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93AF40AA58AF0595661FC2E8 /* WIPFoundation tvOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61FA24956ADA90270DFC13A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FBA366A5125AB5A44B42EE6 /* WIPFoundation macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AFE2989271566591933C2AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E0D308DD69CD285F142E4E8 /* WIPFoundation iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		33947F41B414E2D2E99EE704 /* WIPExtensions */ = {
@@ -175,11 +244,13 @@
 			buildConfigurationList = AC100F6EC387E1427C1CB689 /* Build configuration list for PBXNativeTarget "WIPFoundation tvOS Tests" */;
 			buildPhases = (
 				E703238611D728BB4B20AE36 /* Sources */,
+				14C5933426D041E41FA32346 /* Frameworks */,
+				F0654245EB4E32F65A439AA8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9EBF201C0ECEB04D37EB5058 /* PBXTargetDependency */,
+				5B040905DFB058BB22C6DDD0 /* PBXTargetDependency */,
 			);
 			name = "WIPFoundation tvOS Tests";
 			productName = "WIPFoundation tvOS Tests";
@@ -191,11 +262,13 @@
 			buildConfigurationList = E233F86FDC23B822E0B39653 /* Build configuration list for PBXNativeTarget "WIPFoundation iOS Tests" */;
 			buildPhases = (
 				19949BD5F58969819743698E /* Sources */,
+				6AFE2989271566591933C2AD /* Frameworks */,
+				4B01FF7EAB5FC81DFD31BAE8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4675A54453F1A391781C5B17 /* PBXTargetDependency */,
+				95CCC138876429C5CDF6E47E /* PBXTargetDependency */,
 			);
 			name = "WIPFoundation iOS Tests";
 			productName = "WIPFoundation iOS Tests";
@@ -207,11 +280,13 @@
 			buildConfigurationList = 491E546914E7AAAB60038EF8 /* Build configuration list for PBXNativeTarget "WIPFoundation macOS Tests" */;
 			buildPhases = (
 				EE54A36173AA0D8269928BE1 /* Sources */,
+				61FA24956ADA90270DFC13A6 /* Frameworks */,
+				062F32BE1C9DEC3E5D19BA5F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AB5747590461F7FB1EB39936 /* PBXTargetDependency */,
+				FC467B58AD43DAF98AF33789 /* PBXTargetDependency */,
 			);
 			name = "WIPFoundation macOS Tests";
 			productName = "WIPFoundation macOS Tests";
@@ -425,20 +500,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4675A54453F1A391781C5B17 /* PBXTargetDependency */ = {
+		5B040905DFB058BB22C6DDD0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DAC32C922344ADF05605219D /* WIPFoundation iOS Tests */;
-			targetProxy = F6316EB080423FA560EE998D /* PBXContainerItemProxy */;
+			target = 66354D9C06E680994BA07D92 /* WIPFoundation tvOS */;
+			targetProxy = A2D41DFA161A78149AC43D74 /* PBXContainerItemProxy */;
 		};
-		9EBF201C0ECEB04D37EB5058 /* PBXTargetDependency */ = {
+		95CCC138876429C5CDF6E47E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D32E4D9B7F6C4BFD9889E60B /* WIPFoundation tvOS Tests */;
-			targetProxy = 43AF0F15E4AC29D04C1153C1 /* PBXContainerItemProxy */;
+			target = 2B4B301B8DB0BED6BA4613B0 /* WIPFoundation iOS */;
+			targetProxy = E81D3111B634B2E8E8531A40 /* PBXContainerItemProxy */;
 		};
-		AB5747590461F7FB1EB39936 /* PBXTargetDependency */ = {
+		FC467B58AD43DAF98AF33789 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F4204646B5EE2E861C52E93C /* WIPFoundation macOS Tests */;
-			targetProxy = F53A62945496F4C838D798C5 /* PBXContainerItemProxy */;
+			target = F422BF5FB222BAB883308154 /* WIPFoundation macOS */;
+			targetProxy = B7B4EB8DDF23E3B62A3E1646 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -459,6 +534,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = es.rpastor.wip.foundation;
+				PRODUCT_NAME = WIPFoundation;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -557,6 +633,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = es.rpastor.wip.foundation;
+				PRODUCT_NAME = WIPFoundation;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -637,6 +714,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = es.rpastor.wip.foundation;
+				PRODUCT_NAME = WIPFoundation;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -660,6 +738,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = es.rpastor.wip.foundation;
+				PRODUCT_NAME = WIPFoundation;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -752,6 +831,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = es.rpastor.wip.foundation;
+				PRODUCT_NAME = WIPFoundation;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -776,6 +856,7 @@
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = es.rpastor.wip.foundation;
+				PRODUCT_NAME = WIPFoundation;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -799,6 +880,7 @@
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = es.rpastor.wip.foundation;
+				PRODUCT_NAME = WIPFoundation;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -817,6 +899,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = es.rpastor.wip.foundation;
+				PRODUCT_NAME = WIPFoundation;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;

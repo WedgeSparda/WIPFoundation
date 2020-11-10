@@ -22,7 +22,7 @@ jobs:
         run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "WIPFoundation.xcodeproj" -scheme "WIPFoundation iOS" -destination "${{ matrix.destination }}" clean test | xcpretty
 
   macOS_5_3:
-    name: Test macOS
+    name: Test macOS (Swift 5.3)
     runs-on: macOS-latest 
     env:
       DEVELOPER_DIR: /Applications/Xcode_12.1.app/Contents/Developer
