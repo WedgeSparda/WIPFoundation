@@ -20,7 +20,7 @@ targetTemplates:
     info:
       path: Tests/Info.plist
     dependencies:
-      - target: "WIPFoundation ${framework_platform} Tests"
+      - target: "WIPFoundation ${framework_platform}"
 
 targets:
   WIPFoundation iOS:
