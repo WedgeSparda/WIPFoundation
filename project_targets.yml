@@ -1,0 +1,59 @@
+targetTemplates:
+  Base:
+    type: framework
+    platform: ${framework_platform}
+    sources: 
+      - path: Source
+    info:
+      path: Info.plist
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: es.rpastor.wip.foundation
+    postCompileScripts:
+      - script: swiftlint
+        name: Swiftlint
+
+  TestsBase:
+    type: bundle.unit-test
+    platform: ${framework_platform}
+    sources: Tests
+    info:
+      path: Tests/Info.plist
+    dependencies:
+      - target: "WIPFoundation ${framework_platform} Tests"
+
+targets:
+  WIPFoundation iOS:
+    templates: [Base]
+    templateAttributes:
+      framework_platform: iOS
+
+  WIPFoundation iOS Tests:
+    templates: [TestsBase]
+    templateAttributes:
+      framework_platform: iOS
+
+  WIPFoundation macOS:
+    templates: [Base]
+    templateAttributes:
+      framework_platform: macOS
+
+  WIPFoundation macOS Tests:
+    templates: [TestsBase]
+    templateAttributes:
+      framework_platform: macOS
+
+  WIPFoundation tvOS:
+    templates: [Base]
+    templateAttributes:
+      framework_platform: tvOS
+
+  WIPFoundation tvOS Tests:
+    templates: [TestsBase]
+    templateAttributes:
+      framework_platform: tvOS
+
+  WIPFoundation watchOS:
+    templates: [Base]
+    templateAttributes:
+      framework_platform: watchOS

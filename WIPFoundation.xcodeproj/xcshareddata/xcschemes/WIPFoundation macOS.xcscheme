@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D43786536887DB00CB25F756"
-               BuildableName = "WIPFoundation.framework"
-               BlueprintName = "WIPFoundation_tvOS"
+               BlueprintIdentifier = "F422BF5FB222BAB883308154"
+               BuildableName = "WIPFoundation macOS.framework"
+               BlueprintName = "WIPFoundation macOS"
                ReferencedContainer = "container:WIPFoundation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,9 +33,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E45774281443A7D48EAA20C7"
-               BuildableName = "Tests.xctest"
-               BlueprintName = "Tests_tvOS"
+               BlueprintIdentifier = "F4204646B5EE2E861C52E93C"
+               BuildableName = "WIPFoundation macOS Tests.xctest"
+               BlueprintName = "WIPFoundation macOS Tests"
                ReferencedContainer = "container:WIPFoundation.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -43,9 +43,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D43786536887DB00CB25F756"
-            BuildableName = "WIPFoundation.framework"
-            BlueprintName = "WIPFoundation_tvOS"
+            BlueprintIdentifier = "F422BF5FB222BAB883308154"
+            BuildableName = "WIPFoundation macOS.framework"
+            BlueprintName = "WIPFoundation macOS"
             ReferencedContainer = "container:WIPFoundation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,14 +65,12 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D43786536887DB00CB25F756"
-            BuildableName = "WIPFoundation.framework"
-            BlueprintName = "WIPFoundation_tvOS"
+            BlueprintIdentifier = "F422BF5FB222BAB883308154"
+            BuildableName = "WIPFoundation macOS.framework"
+            BlueprintName = "WIPFoundation macOS"
             ReferencedContainer = "container:WIPFoundation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <CommandLineArguments>
-      </CommandLineArguments>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -84,14 +82,12 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D43786536887DB00CB25F756"
-            BuildableName = "WIPFoundation.framework"
-            BlueprintName = "WIPFoundation_tvOS"
+            BlueprintIdentifier = "F422BF5FB222BAB883308154"
+            BuildableName = "WIPFoundation macOS.framework"
+            BlueprintName = "WIPFoundation macOS"
             ReferencedContainer = "container:WIPFoundation.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <CommandLineArguments>
-      </CommandLineArguments>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

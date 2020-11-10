@@ -3,19 +3,24 @@ default_platform(:ios)
 # Private lanes
 
 private_lane :run_iOS_tests do
-  scan(project: "WIPFoundation.xcodeproj",
-    scheme: "WIPFoundation_iOS", 
-    devices: ["iPhone 11"]) 
+  scan(
+    project: "WIPFoundation.xcodeproj",
+    scheme: "WIPFoundation iOS"
+  ) 
 end
 
 private_lane :run_tvOS_tests do
-  scan(project: "WIPFoundation.xcodeproj", 
-    scheme: "WIPFoundation_tvOS") 
+  scan(
+    project: "WIPFoundation.xcodeproj", 
+    scheme: "WIPFoundation tvOS"
+  ) 
 end
 
 private_lane :run_macOS_tests do
-  scan(project: "WIPFoundation.xcodeproj", 
-    scheme: "WIPFoundation_macOS") 
+  scan(
+    project: "WIPFoundation.xcodeproj", 
+    scheme: "WIPFoundation macOS"
+  ) 
 end
 
 # Public lanes

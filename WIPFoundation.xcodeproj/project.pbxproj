@@ -7,130 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05D636CE82A584F0D36A279A /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4B23266D98146201BA091 /* XCTestManifests.swift */; };
-		18F5FE628051EA7A726BB61D /* WIPFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC4F646319F6E1F6A0512689 /* WIPFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1984A4C4EC2CFE6531D3A888 /* WIPCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBFD758F6C844741F3A8D2 /* WIPCompatibleType.swift */; };
-		20B11CE93ECBA83E5CED972C /* WIPFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 655ED1B82D2CD11E0F196C84 /* WIPFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2A5EF6DB40CAB64A22CA8B30 /* WIPFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC07BD0A7F1E41B878F48F7F /* WIPFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2B38DB3E7E5DA66BD1540027 /* WIPCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBFD758F6C844741F3A8D2 /* WIPCompatibleType.swift */; };
-		2CB0355DB28937785BD33680 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4B23266D98146201BA091 /* XCTestManifests.swift */; };
-		2F34DDF6CC5D4BDD5CB514F2 /* String+WIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA4BEACFEB01BADA3618D0 /* String+WIP.swift */; };
-		30DEF2F6FBACC2C6933A4EAE /* String+WIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA4BEACFEB01BADA3618D0 /* String+WIP.swift */; };
-		34E542A94179F7296E340F07 /* WIPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655ED1B82D2CD11E0F196C84 /* WIPFoundation.framework */; };
-		5289AD44DA40F8BF419493F0 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE6A46234917E9ABF5B5C0 /* StringTests.swift */; };
-		565E7EF3A5D94C4989A3AB97 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE6A46234917E9ABF5B5C0 /* StringTests.swift */; };
-		66CF05BE47285D6007A4D027 /* WIPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC07BD0A7F1E41B878F48F7F /* WIPFoundation.framework */; };
-		6D6165EADA39EF98C067CD61 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4B23266D98146201BA091 /* XCTestManifests.swift */; };
-		75E1DF3E58288B21FA724934 /* WIPCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBFD758F6C844741F3A8D2 /* WIPCompatibleType.swift */; };
-		859D8C655A89FCB6503D9355 /* String+WIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA4BEACFEB01BADA3618D0 /* String+WIP.swift */; };
-		8CF07B747669176A1087E888 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE6A46234917E9ABF5B5C0 /* StringTests.swift */; };
-		A7015812CAAB4758150529F0 /* WIPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4F646319F6E1F6A0512689 /* WIPFoundation.framework */; };
+		18687DA8514A9AB2D604A533 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4B23266D98146201BA091 /* XCTestManifests.swift */; };
+		250195B5538E61ABC7EFA4AE /* WIPCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBFD758F6C844741F3A8D2 /* WIPCompatibleType.swift */; };
+		395ECC8FD4C0FF1D09032B73 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4B23266D98146201BA091 /* XCTestManifests.swift */; };
+		3FD09A0D0E660E0CEB6F5269 /* String+WIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA4BEACFEB01BADA3618D0 /* String+WIP.swift */; };
+		4887C2DA2FB0589B1D6A852E /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE6A46234917E9ABF5B5C0 /* StringTests.swift */; };
+		4BC6A117F7DC392C4CB096D7 /* WIPCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBFD758F6C844741F3A8D2 /* WIPCompatibleType.swift */; };
+		602BDF650A98C6042972C7C2 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE6A46234917E9ABF5B5C0 /* StringTests.swift */; };
+		61A2DE775FCDABD387DB13AC /* String+WIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA4BEACFEB01BADA3618D0 /* String+WIP.swift */; };
+		848CDD3DD1C1C74D866D6EAE /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE6A46234917E9ABF5B5C0 /* StringTests.swift */; };
+		9081258E77BF4A6A04710146 /* String+WIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA4BEACFEB01BADA3618D0 /* String+WIP.swift */; };
+		96210467CC3DBA4A40AE8DEE /* WIPCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBFD758F6C844741F3A8D2 /* WIPCompatibleType.swift */; };
+		97E925EE0B032520364E935A /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4B23266D98146201BA091 /* XCTestManifests.swift */; };
+		9A9A8662186D4F3EC1978EE0 /* WIPCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBFD758F6C844741F3A8D2 /* WIPCompatibleType.swift */; };
+		B997635BB46D142C93279397 /* String+WIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA4BEACFEB01BADA3618D0 /* String+WIP.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8CF6F08B6DE869962C05E538 /* PBXContainerItemProxy */ = {
+		43AF0F15E4AC29D04C1153C1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 17B11B32A29CDA419109983D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B9609518C93647DECC5DC30C;
-			remoteInfo = WIPFoundation_iOS;
+			remoteGlobalIDString = D32E4D9B7F6C4BFD9889E60B;
+			remoteInfo = "WIPFoundation tvOS Tests";
 		};
-		A9A5FEE451038B6AB9840FFE /* PBXContainerItemProxy */ = {
+		F53A62945496F4C838D798C5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 17B11B32A29CDA419109983D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1A9AA066E3173F6E5EC5CE4D;
-			remoteInfo = WIPFoundation_macOS;
+			remoteGlobalIDString = F4204646B5EE2E861C52E93C;
+			remoteInfo = "WIPFoundation macOS Tests";
 		};
-		AF37DA6C56F5EBA3A52EB76C /* PBXContainerItemProxy */ = {
+		F6316EB080423FA560EE998D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 17B11B32A29CDA419109983D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D43786536887DB00CB25F756;
-			remoteInfo = WIPFoundation_tvOS;
+			remoteGlobalIDString = DAC32C922344ADF05605219D;
+			remoteInfo = "WIPFoundation iOS Tests";
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		1C38AA0E2CAD7ED5CA9973CB /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				20B11CE93ECBA83E5CED972C /* WIPFoundation.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		772A9CDE9129762B1AFA95E9 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				2A5EF6DB40CAB64A22CA8B30 /* WIPFoundation.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C8444E0625EBD32857A5735E /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				18F5FE628051EA7A726BB61D /* WIPFoundation.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		269151E72449EBF0FE2FBF04 /* WIPFoundation macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "WIPFoundation macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BCBFD758F6C844741F3A8D2 /* WIPCompatibleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIPCompatibleType.swift; sourceTree = "<group>"; };
-		620CF304255988F4007027AE /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
+		3B86A8F66ACFE861DDAB75E2 /* WIPFoundation iOS Tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = "WIPFoundation iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50728C751070CADAA1B71EA6 /* WIPFoundation watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "WIPFoundation watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BB68711DD21613D17F123C5 /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
 		64C4B23266D98146201BA091 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
-		655ED1B82D2CD11E0F196C84 /* WIPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6EB8025A2EF51458D2381E34 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66CB3B51B5829BB20E22E6B6 /* WIPFoundation iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "WIPFoundation iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF5F07CA380B9296968D344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8140A23CD601AB0BBAED2E2A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		82DE6A46234917E9ABF5B5C0 /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
 		884F2A7C9E2AE308F7E0731E /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
-		9AC893375DA9DB029F91A1D8 /* Tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C94B398ADAA6743BFC00A238 /* WIPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC07BD0A7F1E41B878F48F7F /* WIPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC4F646319F6E1F6A0512689 /* WIPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFB50411B024ADAB260D2DE3 /* Tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8F9B2BE4C0E1D2CA7BCFF6C /* WIPFoundation macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WIPFoundation macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF1FCE0432B8508717172E37 /* WIPFoundation tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "WIPFoundation tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAA2B02CD11A3DCBA118B0F1 /* WIPFoundation tvOS Tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = "WIPFoundation tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFCA4BEACFEB01BADA3618D0 /* String+WIP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+WIP.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		2ED441B570A570A7DB3E7C8A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				34E542A94179F7296E340F07 /* WIPFoundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4C46346DFFD6F828069E0756 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				66CF05BE47285D6007A4D027 /* WIPFoundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F0ABC722AF1ED3EA96D01290 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A7015812CAAB4758150529F0 /* WIPFoundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		33947F41B414E2D2E99EE704 /* WIPExtensions */ = {
@@ -145,8 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				884F2A7C9E2AE308F7E0731E /* LICENSE.md */,
+				5BB68711DD21613D17F123C5 /* LinuxMain.swift */,
 				8140A23CD601AB0BBAED2E2A /* README.md */,
-				620CF304255988F4007027AE /* LinuxMain.swift */,
 				AE851B23AA2C85D691B3C319 /* Source */,
 				A7232755BE11B3FA4E7D3060 /* Tests */,
 				DDD5F6FE05B0759B005FC35E /* Products */,
@@ -191,13 +124,13 @@
 		DDD5F6FE05B0759B005FC35E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9AC893375DA9DB029F91A1D8 /* Tests.xctest */,
-				6EB8025A2EF51458D2381E34 /* Tests.xctest */,
-				EFB50411B024ADAB260D2DE3 /* Tests.xctest */,
-				C94B398ADAA6743BFC00A238 /* WIPFoundation.framework */,
-				DC4F646319F6E1F6A0512689 /* WIPFoundation.framework */,
-				DC07BD0A7F1E41B878F48F7F /* WIPFoundation.framework */,
-				655ED1B82D2CD11E0F196C84 /* WIPFoundation.framework */,
+				3B86A8F66ACFE861DDAB75E2 /* WIPFoundation iOS Tests.xctest */,
+				66CB3B51B5829BB20E22E6B6 /* WIPFoundation iOS.framework */,
+				A8F9B2BE4C0E1D2CA7BCFF6C /* WIPFoundation macOS Tests.xctest */,
+				269151E72449EBF0FE2FBF04 /* WIPFoundation macOS.framework */,
+				EAA2B02CD11A3DCBA118B0F1 /* WIPFoundation tvOS Tests.xctest */,
+				DF1FCE0432B8508717172E37 /* WIPFoundation tvOS.framework */,
+				50728C751070CADAA1B71EA6 /* WIPFoundation watchOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,122 +138,117 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1358CEE5370EE5097E77C60D /* WIPFoundation_watchOS */ = {
+		2B4B301B8DB0BED6BA4613B0 /* WIPFoundation iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B9C3F14590D536F94DC83D09 /* Build configuration list for PBXNativeTarget "WIPFoundation_watchOS" */;
+			buildConfigurationList = 569D3D8550B6B1A4DDF045F6 /* Build configuration list for PBXNativeTarget "WIPFoundation iOS" */;
 			buildPhases = (
-				8A2F61B23FFABBA270E720CC /* Sources */,
+				131BF842926E24E58E246727 /* Sources */,
+				41BA69EDB151396124E1D25A /* Swiftlint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = WIPFoundation_watchOS;
-			productName = WIPFoundation_watchOS;
-			productReference = C94B398ADAA6743BFC00A238 /* WIPFoundation.framework */;
+			name = "WIPFoundation iOS";
+			productName = "WIPFoundation iOS";
+			productReference = 66CB3B51B5829BB20E22E6B6 /* WIPFoundation iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		170480A34B6A5FA2F42779A4 /* Tests_macOS */ = {
+		66354D9C06E680994BA07D92 /* WIPFoundation tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B0B2CEFA0CD635F197076FF1 /* Build configuration list for PBXNativeTarget "Tests_macOS" */;
+			buildConfigurationList = 89EC077BC2AA03C8B2672334 /* Build configuration list for PBXNativeTarget "WIPFoundation tvOS" */;
 			buildPhases = (
-				C0EB060E63213ECF2D32849E /* Sources */,
-				4C46346DFFD6F828069E0756 /* Frameworks */,
-				772A9CDE9129762B1AFA95E9 /* Embed Frameworks */,
+				75C49D3531A5D9435CD5B9B2 /* Sources */,
+				40C70CE4C98951C8AE148E02 /* Swiftlint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F87C888A3013FA1E06EDA5C0 /* PBXTargetDependency */,
 			);
-			name = Tests_macOS;
-			productName = Tests_macOS;
-			productReference = 6EB8025A2EF51458D2381E34 /* Tests.xctest */;
+			name = "WIPFoundation tvOS";
+			productName = "WIPFoundation tvOS";
+			productReference = DF1FCE0432B8508717172E37 /* WIPFoundation tvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D32E4D9B7F6C4BFD9889E60B /* WIPFoundation tvOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC100F6EC387E1427C1CB689 /* Build configuration list for PBXNativeTarget "WIPFoundation tvOS Tests" */;
+			buildPhases = (
+				E703238611D728BB4B20AE36 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EBF201C0ECEB04D37EB5058 /* PBXTargetDependency */,
+			);
+			name = "WIPFoundation tvOS Tests";
+			productName = "WIPFoundation tvOS Tests";
+			productReference = EAA2B02CD11A3DCBA118B0F1 /* WIPFoundation tvOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1A9AA066E3173F6E5EC5CE4D /* WIPFoundation_macOS */ = {
+		DAC32C922344ADF05605219D /* WIPFoundation iOS Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 870204DC4E2183603084EC3E /* Build configuration list for PBXNativeTarget "WIPFoundation_macOS" */;
+			buildConfigurationList = E233F86FDC23B822E0B39653 /* Build configuration list for PBXNativeTarget "WIPFoundation iOS Tests" */;
 			buildPhases = (
-				49307AC9A344A05771A7BF1D /* Sources */,
-				D0252E14CEAFE92199671488 /* Swiftlint */,
+				19949BD5F58969819743698E /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4675A54453F1A391781C5B17 /* PBXTargetDependency */,
 			);
-			name = WIPFoundation_macOS;
-			productName = WIPFoundation_macOS;
-			productReference = DC07BD0A7F1E41B878F48F7F /* WIPFoundation.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B9609518C93647DECC5DC30C /* WIPFoundation_iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E68AA107317C875F23C75A8B /* Build configuration list for PBXNativeTarget "WIPFoundation_iOS" */;
-			buildPhases = (
-				1D4F7256BF64D0432AC595C8 /* Sources */,
-				67B5683AE1D36677B1405AF4 /* Swiftlint */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = WIPFoundation_iOS;
-			productName = WIPFoundation_iOS;
-			productReference = DC4F646319F6E1F6A0512689 /* WIPFoundation.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D43786536887DB00CB25F756 /* WIPFoundation_tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5E9F15DBB3A0B4D92FDAD29A /* Build configuration list for PBXNativeTarget "WIPFoundation_tvOS" */;
-			buildPhases = (
-				FD4003AE096835D85CBBC801 /* Sources */,
-				D34549697BA5FA1E5ACC1F17 /* Swiftlint */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = WIPFoundation_tvOS;
-			productName = WIPFoundation_tvOS;
-			productReference = 655ED1B82D2CD11E0F196C84 /* WIPFoundation.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E45774281443A7D48EAA20C7 /* Tests_tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 469B56D952D356C9EDED8C00 /* Build configuration list for PBXNativeTarget "Tests_tvOS" */;
-			buildPhases = (
-				7DE741C5CFE15570E1F2EC79 /* Sources */,
-				2ED441B570A570A7DB3E7C8A /* Frameworks */,
-				1C38AA0E2CAD7ED5CA9973CB /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				98AB0828116F67890046648D /* PBXTargetDependency */,
-			);
-			name = Tests_tvOS;
-			productName = Tests_tvOS;
-			productReference = EFB50411B024ADAB260D2DE3 /* Tests.xctest */;
+			name = "WIPFoundation iOS Tests";
+			productName = "WIPFoundation iOS Tests";
+			productReference = 3B86A8F66ACFE861DDAB75E2 /* WIPFoundation iOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EC2EF02158631D1F9F4F41A6 /* Tests_iOS */ = {
+		F4204646B5EE2E861C52E93C /* WIPFoundation macOS Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 145A22D3B5ABFBB2DDE27819 /* Build configuration list for PBXNativeTarget "Tests_iOS" */;
+			buildConfigurationList = 491E546914E7AAAB60038EF8 /* Build configuration list for PBXNativeTarget "WIPFoundation macOS Tests" */;
 			buildPhases = (
-				48F3AB3983F0B95408562DB7 /* Sources */,
-				F0ABC722AF1ED3EA96D01290 /* Frameworks */,
-				C8444E0625EBD32857A5735E /* Embed Frameworks */,
+				EE54A36173AA0D8269928BE1 /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AAC029F0AE5E2D26A0DB7679 /* PBXTargetDependency */,
+				AB5747590461F7FB1EB39936 /* PBXTargetDependency */,
 			);
-			name = Tests_iOS;
-			productName = Tests_iOS;
-			productReference = 9AC893375DA9DB029F91A1D8 /* Tests.xctest */;
+			name = "WIPFoundation macOS Tests";
+			productName = "WIPFoundation macOS Tests";
+			productReference = A8F9B2BE4C0E1D2CA7BCFF6C /* WIPFoundation macOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F422BF5FB222BAB883308154 /* WIPFoundation macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D64FE0CEAD34E2BA79737BFB /* Build configuration list for PBXNativeTarget "WIPFoundation macOS" */;
+			buildPhases = (
+				9BB98EF50B04573FD2221BAF /* Sources */,
+				CBED6D5E4B1B7D7EF837B575 /* Swiftlint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WIPFoundation macOS";
+			productName = "WIPFoundation macOS";
+			productReference = 269151E72449EBF0FE2FBF04 /* WIPFoundation macOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FC40D2C0DB7644970A6963B9 /* WIPFoundation watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE0BF31124C0D28DB2506642 /* Build configuration list for PBXNativeTarget "WIPFoundation watchOS" */;
+			buildPhases = (
+				463FC9E9F27E2815DBD93064 /* Sources */,
+				22F4A5EEBB96D63FC14D5155 /* Swiftlint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WIPFoundation watchOS";
+			productName = "WIPFoundation watchOS";
+			productReference = 50728C751070CADAA1B71EA6 /* WIPFoundation watchOS.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -329,6 +257,8 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = 1CD22FB14110B48D1F020DCA /* Build configuration list for PBXProject "WIPFoundation" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -342,19 +272,19 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EC2EF02158631D1F9F4F41A6 /* Tests_iOS */,
-				170480A34B6A5FA2F42779A4 /* Tests_macOS */,
-				E45774281443A7D48EAA20C7 /* Tests_tvOS */,
-				B9609518C93647DECC5DC30C /* WIPFoundation_iOS */,
-				1A9AA066E3173F6E5EC5CE4D /* WIPFoundation_macOS */,
-				D43786536887DB00CB25F756 /* WIPFoundation_tvOS */,
-				1358CEE5370EE5097E77C60D /* WIPFoundation_watchOS */,
+				2B4B301B8DB0BED6BA4613B0 /* WIPFoundation iOS */,
+				DAC32C922344ADF05605219D /* WIPFoundation iOS Tests */,
+				F422BF5FB222BAB883308154 /* WIPFoundation macOS */,
+				F4204646B5EE2E861C52E93C /* WIPFoundation macOS Tests */,
+				66354D9C06E680994BA07D92 /* WIPFoundation tvOS */,
+				D32E4D9B7F6C4BFD9889E60B /* WIPFoundation tvOS Tests */,
+				FC40D2C0DB7644970A6963B9 /* WIPFoundation watchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		67B5683AE1D36677B1405AF4 /* Swiftlint */ = {
+		22F4A5EEBB96D63FC14D5155 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -372,7 +302,7 @@
 			shellPath = /bin/sh;
 			shellScript = swiftlint;
 		};
-		D0252E14CEAFE92199671488 /* Swiftlint */ = {
+		40C70CE4C98951C8AE148E02 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -390,7 +320,25 @@
 			shellPath = /bin/sh;
 			shellScript = swiftlint;
 		};
-		D34549697BA5FA1E5ACC1F17 /* Swiftlint */ = {
+		41BA69EDB151396124E1D25A /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = swiftlint;
+		};
+		CBED6D5E4B1B7D7EF837B575 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -411,89 +359,91 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1D4F7256BF64D0432AC595C8 /* Sources */ = {
+		131BF842926E24E58E246727 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F34DDF6CC5D4BDD5CB514F2 /* String+WIP.swift in Sources */,
-				1984A4C4EC2CFE6531D3A888 /* WIPCompatibleType.swift in Sources */,
+				61A2DE775FCDABD387DB13AC /* String+WIP.swift in Sources */,
+				9A9A8662186D4F3EC1978EE0 /* WIPCompatibleType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		48F3AB3983F0B95408562DB7 /* Sources */ = {
+		19949BD5F58969819743698E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CF07B747669176A1087E888 /* StringTests.swift in Sources */,
-				2CB0355DB28937785BD33680 /* XCTestManifests.swift in Sources */,
+				848CDD3DD1C1C74D866D6EAE /* StringTests.swift in Sources */,
+				18687DA8514A9AB2D604A533 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		49307AC9A344A05771A7BF1D /* Sources */ = {
+		463FC9E9F27E2815DBD93064 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				859D8C655A89FCB6503D9355 /* String+WIP.swift in Sources */,
-				75E1DF3E58288B21FA724934 /* WIPCompatibleType.swift in Sources */,
+				B997635BB46D142C93279397 /* String+WIP.swift in Sources */,
+				4BC6A117F7DC392C4CB096D7 /* WIPCompatibleType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DE741C5CFE15570E1F2EC79 /* Sources */ = {
+		75C49D3531A5D9435CD5B9B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				565E7EF3A5D94C4989A3AB97 /* StringTests.swift in Sources */,
-				6D6165EADA39EF98C067CD61 /* XCTestManifests.swift in Sources */,
+				9081258E77BF4A6A04710146 /* String+WIP.swift in Sources */,
+				96210467CC3DBA4A40AE8DEE /* WIPCompatibleType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A2F61B23FFABBA270E720CC /* Sources */ = {
+		9BB98EF50B04573FD2221BAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FD09A0D0E660E0CEB6F5269 /* String+WIP.swift in Sources */,
+				250195B5538E61ABC7EFA4AE /* WIPCompatibleType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C0EB060E63213ECF2D32849E /* Sources */ = {
+		E703238611D728BB4B20AE36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5289AD44DA40F8BF419493F0 /* StringTests.swift in Sources */,
-				05D636CE82A584F0D36A279A /* XCTestManifests.swift in Sources */,
+				4887C2DA2FB0589B1D6A852E /* StringTests.swift in Sources */,
+				395ECC8FD4C0FF1D09032B73 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD4003AE096835D85CBBC801 /* Sources */ = {
+		EE54A36173AA0D8269928BE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30DEF2F6FBACC2C6933A4EAE /* String+WIP.swift in Sources */,
-				2B38DB3E7E5DA66BD1540027 /* WIPCompatibleType.swift in Sources */,
+				602BDF650A98C6042972C7C2 /* StringTests.swift in Sources */,
+				97E925EE0B032520364E935A /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		98AB0828116F67890046648D /* PBXTargetDependency */ = {
+		4675A54453F1A391781C5B17 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D43786536887DB00CB25F756 /* WIPFoundation_tvOS */;
-			targetProxy = AF37DA6C56F5EBA3A52EB76C /* PBXContainerItemProxy */;
+			target = DAC32C922344ADF05605219D /* WIPFoundation iOS Tests */;
+			targetProxy = F6316EB080423FA560EE998D /* PBXContainerItemProxy */;
 		};
-		AAC029F0AE5E2D26A0DB7679 /* PBXTargetDependency */ = {
+		9EBF201C0ECEB04D37EB5058 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B9609518C93647DECC5DC30C /* WIPFoundation_iOS */;
-			targetProxy = 8CF6F08B6DE869962C05E538 /* PBXContainerItemProxy */;
+			target = D32E4D9B7F6C4BFD9889E60B /* WIPFoundation tvOS Tests */;
+			targetProxy = 43AF0F15E4AC29D04C1153C1 /* PBXContainerItemProxy */;
 		};
-		F87C888A3013FA1E06EDA5C0 /* PBXTargetDependency */ = {
+		AB5747590461F7FB1EB39936 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1A9AA066E3173F6E5EC5CE4D /* WIPFoundation_macOS */;
-			targetProxy = A9A5FEE451038B6AB9840FFE /* PBXContainerItemProxy */;
+			target = F4204646B5EE2E861C52E93C /* WIPFoundation macOS Tests */;
+			targetProxy = F53A62945496F4C838D798C5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		16462F15009AEF046FAE0D08 /* Debug */ = {
+		1849D4C6354A2CA0FAE7EC3B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -504,72 +454,19 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = es.rpastor.wip.foundation;
-				PRODUCT_NAME = WIPFoundation;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				VERSIONING_SYSTEM = "apple-generic";
-			};
-			name = Debug;
-		};
-		17660E4FFD3F4BE835D6F331 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_NAME = Tests;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		1918525F13D3EC35624FC450 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_NAME = Tests;
 				SDKROOT = appletvos;
-				TARGETED_DEVICE_FAMILY = 3;
-			};
-			name = Debug;
-		};
-		19E091BD1657245F4D599F4F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = es.rpastor.wip.foundation;
-				PRODUCT_NAME = WIPFoundation;
-				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
-		1D581F5BCAB5F5531E5E9922 /* Debug */ = {
+		3C5348F810FC6968F26D6F53 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -580,36 +477,26 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_NAME = Tests;
 				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		28DDAE3D5A3DD198832ED89A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = es.rpastor.wip.foundation;
-				PRODUCT_NAME = WIPFoundation;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
-				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
-		48EFB90187A21E32665A8D9E /* Release */ = {
+		5FC9968F6AD8F20E004A004D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		6676D2F5ECA03B794748D0A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -620,12 +507,41 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_NAME = Tests;
 				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7BBD662F6166D70DFCE6E812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		5F63700751295B73591FD1B4 /* Release */ = {
+		85189F5C3C757D38EB01C685 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		8981D836B3C6EF81D254B3E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -641,29 +557,12 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = es.rpastor.wip.foundation;
-				PRODUCT_NAME = WIPFoundation;
-				SDKROOT = iphoneos;
+				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 3;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
-			name = Release;
-		};
-		6A3C5426840DEF89C556EC78 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_NAME = Tests;
-				SDKROOT = appletvos;
-				TARGETED_DEVICE_FAMILY = 3;
-			};
-			name = Release;
+			name = Debug;
 		};
 		9C3AAE4DF139B2B6CA87B606 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -716,8 +615,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -725,12 +622,29 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TVOS_DEPLOYMENT_TARGET = 14.0;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Debug;
 		};
-		C78A1B2B88CF5282355ED025 /* Debug */ = {
+		B59F34BC1710CEC93D35CDF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.rpastor.wip.foundation;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		C40C153186B9887FD8F67B83 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -746,33 +660,12 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = es.rpastor.wip.foundation;
-				PRODUCT_NAME = WIPFoundation;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
-		};
-		CD8E742C80A028731DDC6BBD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = es.rpastor.wip.foundation;
-				PRODUCT_NAME = WIPFoundation;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				VERSIONING_SYSTEM = "apple-generic";
-			};
-			name = Release;
 		};
 		D763D4F241785CFE972A061E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -819,20 +712,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
-				TVOS_DEPLOYMENT_TARGET = 14.0;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Release;
 		};
-		D8AACA78F81ED009D0FB0FC9 /* Release */ = {
+		E59A7FD08B760DDF30AF8FFA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -842,13 +731,35 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_NAME = Tests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
+			name = Debug;
+		};
+		EFDD97E037C1C089A24C1555 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = es.rpastor.wip.foundation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
 			name = Release;
 		};
-		DED6C125345408C2608BE3DD /* Debug */ = {
+		F204D794DD90726AFB89CE09 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -865,14 +776,36 @@
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = es.rpastor.wip.foundation;
-				PRODUCT_NAME = WIPFoundation;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		F205BDC93653E961B7BF963B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = es.rpastor.wip.foundation;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
-		E1DDC1AD3922BC173319C73D /* Debug */ = {
+		FF9F85A9CB0807EFEF0D9126 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -883,31 +816,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = es.rpastor.wip.foundation;
-				PRODUCT_NAME = WIPFoundation;
-				SDKROOT = appletvos;
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
+				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		145A22D3B5ABFBB2DDE27819 /* Build configuration list for PBXNativeTarget "Tests_iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				17660E4FFD3F4BE835D6F331 /* Debug */,
-				D8AACA78F81ED009D0FB0FC9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
 		1CD22FB14110B48D1F020DCA /* Build configuration list for PBXProject "WIPFoundation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -917,56 +836,65 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		469B56D952D356C9EDED8C00 /* Build configuration list for PBXNativeTarget "Tests_tvOS" */ = {
+		491E546914E7AAAB60038EF8 /* Build configuration list for PBXNativeTarget "WIPFoundation macOS Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1918525F13D3EC35624FC450 /* Debug */,
-				6A3C5426840DEF89C556EC78 /* Release */,
+				6676D2F5ECA03B794748D0A1 /* Debug */,
+				3C5348F810FC6968F26D6F53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		5E9F15DBB3A0B4D92FDAD29A /* Build configuration list for PBXNativeTarget "WIPFoundation_tvOS" */ = {
+		569D3D8550B6B1A4DDF045F6 /* Build configuration list for PBXNativeTarget "WIPFoundation iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E1DDC1AD3922BC173319C73D /* Debug */,
-				28DDAE3D5A3DD198832ED89A /* Release */,
+				C40C153186B9887FD8F67B83 /* Debug */,
+				EFDD97E037C1C089A24C1555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		870204DC4E2183603084EC3E /* Build configuration list for PBXNativeTarget "WIPFoundation_macOS" */ = {
+		89EC077BC2AA03C8B2672334 /* Build configuration list for PBXNativeTarget "WIPFoundation tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DED6C125345408C2608BE3DD /* Debug */,
-				19E091BD1657245F4D599F4F /* Release */,
+				8981D836B3C6EF81D254B3E2 /* Debug */,
+				1849D4C6354A2CA0FAE7EC3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		B0B2CEFA0CD635F197076FF1 /* Build configuration list for PBXNativeTarget "Tests_macOS" */ = {
+		AC100F6EC387E1427C1CB689 /* Build configuration list for PBXNativeTarget "WIPFoundation tvOS Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1D581F5BCAB5F5531E5E9922 /* Debug */,
-				48EFB90187A21E32665A8D9E /* Release */,
+				85189F5C3C757D38EB01C685 /* Debug */,
+				5FC9968F6AD8F20E004A004D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		B9C3F14590D536F94DC83D09 /* Build configuration list for PBXNativeTarget "WIPFoundation_watchOS" */ = {
+		BE0BF31124C0D28DB2506642 /* Build configuration list for PBXNativeTarget "WIPFoundation watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				16462F15009AEF046FAE0D08 /* Debug */,
-				CD8E742C80A028731DDC6BBD /* Release */,
+				B59F34BC1710CEC93D35CDF1 /* Debug */,
+				FF9F85A9CB0807EFEF0D9126 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		E68AA107317C875F23C75A8B /* Build configuration list for PBXNativeTarget "WIPFoundation_iOS" */ = {
+		D64FE0CEAD34E2BA79737BFB /* Build configuration list for PBXNativeTarget "WIPFoundation macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C78A1B2B88CF5282355ED025 /* Debug */,
-				5F63700751295B73591FD1B4 /* Release */,
+				F205BDC93653E961B7BF963B /* Debug */,
+				F204D794DD90726AFB89CE09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E233F86FDC23B822E0B39653 /* Build configuration list for PBXNativeTarget "WIPFoundation iOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E59A7FD08B760DDF30AF8FFA /* Debug */,
+				7BBD662F6166D70DFCE6E812 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

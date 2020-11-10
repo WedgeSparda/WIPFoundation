@@ -19,7 +19,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: iOS - ${{ matrix.destination }}
-        run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "WIPFoundation.xcodeproj" -scheme "WIPFoundation_iOS" -destination "${{ matrix.destination }}" clean test | xcpretty
+        run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "WIPFoundation.xcodeproj" -scheme "WIPFoundation iOS" -destination "${{ matrix.destination }}" clean test | xcpretty
 
   macOS_5_3:
     name: Test macOS
@@ -30,7 +30,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: macOS (Swift 5.3)
-        run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "WIPFoundation.xcodeproj" -scheme "WIPFoundation_macOS" -destination "platform=macOS" clean test | xcpretty
+        run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "WIPFoundation.xcodeproj" -scheme "WIPFoundation macOS" -destination "platform=macOS" clean test | xcpretty
 
   tvOS:
     name: Test tvOS 
@@ -44,7 +44,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: tvOS - ${{ matrix.destination }}
-        run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "WIPFoundation.xcodeproj" -scheme "WIPFoundation_tvOS" -destination "${{ matrix.destination }}" clean test | xcpretty
+        run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "WIPFoundation.xcodeproj" -scheme "WIPFoundation tvOS" -destination "${{ matrix.destination }}" clean test | xcpretty
 
   watchOS:
     name: Build watchOS
@@ -58,7 +58,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: watchOS - ${{ matrix.destination }}
-        run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "WIPFoundation.xcodeproj" -scheme "WIPFoundation_watchOS" -destination "${{ matrix.destination }}" clean build | xcpretty
+        run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "WIPFoundation.xcodeproj" -scheme "WIPFoundation watchOS" -destination "${{ matrix.destination }}" clean build | xcpretty
 
   Linux:
     name: Build Linux

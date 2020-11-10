@@ -1,0 +1,37 @@
+schemeTemplates:
+  Framework:
+    build:
+      targets:
+        ${target}: all
+    test:
+      targets:
+        - name: "${target} Tests"
+  Framework No Tests:
+    build:
+      targets:
+        ${target}: all
+
+schemes:
+  WIPFoundation iOS:
+    templates:
+      - Framework
+    templateAttributes:
+      target: "WIPFoundation iOS"
+
+  WIPFoundation macOS:
+    templates:
+      - Framework
+    templateAttributes:
+      target: "WIPFoundation macOS"
+
+  WIPFoundation tvOS:
+    templates:
+      - Framework
+    templateAttributes:
+      target: "WIPFoundation tvOS"
+
+  WIPFoundation watchOS:
+    templates:
+      - Framework
+    templateAttributes:
+      target: "WIPFoundation tvOS"

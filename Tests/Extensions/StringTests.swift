@@ -117,7 +117,7 @@ class StringTests: XCTestCase {
         ("testTrimming", testTrimming),
         ("testStringToDate", testStringToDate),
         ("testIncorrectStringToDate", testIncorrectStringToDate),
-        ("testNSRange", testNSRange),
+        ("testNSRange", testNSRange)
     ]
 
     // MARK: - Without Linux Support

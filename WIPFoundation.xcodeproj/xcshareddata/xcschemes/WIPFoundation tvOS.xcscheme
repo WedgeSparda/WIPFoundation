@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1210"
+   LastUpgradeVersion = "1200"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1358CEE5370EE5097E77C60D"
-               BuildableName = "WIPFoundation_watchOS.framework"
-               BlueprintName = "WIPFoundation_watchOS"
+               BlueprintIdentifier = "66354D9C06E680994BA07D92"
+               BuildableName = "WIPFoundation tvOS.framework"
+               BlueprintName = "WIPFoundation tvOS"
                ReferencedContainer = "container:WIPFoundation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,9 +26,31 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      onlyGenerateCoverageForSpecifiedTargets = "NO"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D32E4D9B7F6C4BFD9889E60B"
+               BuildableName = "WIPFoundation tvOS Tests.xctest"
+               BlueprintName = "WIPFoundation tvOS Tests"
+               ReferencedContainer = "container:WIPFoundation.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "66354D9C06E680994BA07D92"
+            BuildableName = "WIPFoundation tvOS.framework"
+            BlueprintName = "WIPFoundation tvOS"
+            ReferencedContainer = "container:WIPFoundation.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <CommandLineArguments>
+      </CommandLineArguments>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -40,6 +62,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "66354D9C06E680994BA07D92"
+            BuildableName = "WIPFoundation tvOS.framework"
+            BlueprintName = "WIPFoundation tvOS"
+            ReferencedContainer = "container:WIPFoundation.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -47,15 +78,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1358CEE5370EE5097E77C60D"
-            BuildableName = "WIPFoundation_watchOS.framework"
-            BlueprintName = "WIPFoundation_watchOS"
+            BlueprintIdentifier = "66354D9C06E680994BA07D92"
+            BuildableName = "WIPFoundation tvOS.framework"
+            BlueprintName = "WIPFoundation tvOS"
             ReferencedContainer = "container:WIPFoundation.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
