@@ -5,7 +5,7 @@ targetTemplates:
     sources: 
       - path: Source
     info:
-      path: Source/Info.plist
+      path: Info.plist
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: es.rpastor.wip.foundation

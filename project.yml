@@ -3,6 +3,7 @@ fileGroups:
   - README.md
   - LICENSE.md
   - LinuxMain.swift
+  - Info.plist
 include:
   - project_targets.yml
   - project_schemes.yml

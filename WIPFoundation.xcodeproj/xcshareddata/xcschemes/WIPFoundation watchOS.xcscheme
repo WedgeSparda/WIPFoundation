@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FC40D2C0DB7644970A6963B9"
-               BuildableName = "WIPFoundation watchOS.framework"
+               BuildableName = "WIPFoundation.framework"
                BlueprintName = "WIPFoundation watchOS"
                ReferencedContainer = "container:WIPFoundation.xcodeproj">
             </BuildableReference>
@@ -26,19 +26,18 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      onlyGenerateCoverageForSpecifiedTargets = "NO"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <Testables>
-      </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FC40D2C0DB7644970A6963B9"
-            BuildableName = "WIPFoundation watchOS.framework"
+            BuildableName = "WIPFoundation.framework"
             BlueprintName = "WIPFoundation watchOS"
             ReferencedContainer = "container:WIPFoundation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
+      <Testables>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -54,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FC40D2C0DB7644970A6963B9"
-            BuildableName = "WIPFoundation watchOS.framework"
+            BuildableName = "WIPFoundation.framework"
             BlueprintName = "WIPFoundation watchOS"
             ReferencedContainer = "container:WIPFoundation.xcodeproj">
          </BuildableReference>
@@ -71,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FC40D2C0DB7644970A6963B9"
-            BuildableName = "WIPFoundation watchOS.framework"
+            BuildableName = "WIPFoundation.framework"
             BlueprintName = "WIPFoundation watchOS"
             ReferencedContainer = "container:WIPFoundation.xcodeproj">
          </BuildableReference>

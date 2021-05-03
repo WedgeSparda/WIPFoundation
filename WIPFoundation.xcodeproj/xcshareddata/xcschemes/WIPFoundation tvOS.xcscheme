@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "66354D9C06E680994BA07D92"
-               BuildableName = "WIPFoundation tvOS.framework"
+               BuildableName = "WIPFoundation.framework"
                BlueprintName = "WIPFoundation tvOS"
                ReferencedContainer = "container:WIPFoundation.xcodeproj">
             </BuildableReference>
@@ -26,8 +26,16 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      onlyGenerateCoverageForSpecifiedTargets = "NO"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "66354D9C06E680994BA07D92"
+            BuildableName = "WIPFoundation.framework"
+            BlueprintName = "WIPFoundation tvOS"
+            ReferencedContainer = "container:WIPFoundation.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -40,17 +48,6 @@
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "66354D9C06E680994BA07D92"
-            BuildableName = "WIPFoundation tvOS.framework"
-            BlueprintName = "WIPFoundation tvOS"
-            ReferencedContainer = "container:WIPFoundation.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <CommandLineArguments>
-      </CommandLineArguments>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -66,7 +63,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "66354D9C06E680994BA07D92"
-            BuildableName = "WIPFoundation tvOS.framework"
+            BuildableName = "WIPFoundation.framework"
             BlueprintName = "WIPFoundation tvOS"
             ReferencedContainer = "container:WIPFoundation.xcodeproj">
          </BuildableReference>
@@ -83,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "66354D9C06E680994BA07D92"
-            BuildableName = "WIPFoundation tvOS.framework"
+            BuildableName = "WIPFoundation.framework"
             BlueprintName = "WIPFoundation tvOS"
             ReferencedContainer = "container:WIPFoundation.xcodeproj">
          </BuildableReference>
