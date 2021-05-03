@@ -28,6 +28,7 @@ targets:
     templates: [Base]
     templateAttributes:
       framework_platform: iOS
+    deploymentTarget: 14.0
 
   WIPFoundation iOS Tests:
     templates: [TestsBase]
@@ -38,6 +39,7 @@ targets:
     templates: [Base]
     templateAttributes:
       framework_platform: macOS
+    deploymentTarget: 10.15
 
   WIPFoundation macOS Tests:
     templates: [TestsBase]
@@ -48,6 +50,7 @@ targets:
     templates: [Base]
     templateAttributes:
       framework_platform: tvOS
+    deploymentTarget: 14.0
 
   WIPFoundation tvOS Tests:
     templates: [TestsBase]
@@ -58,3 +61,4 @@ targets:
     templates: [Base]
     templateAttributes:
       framework_platform: watchOS
+    deploymentTarget: 7.0
