@@ -14,7 +14,7 @@ jobs:
       DEVELOPER_DIR: /Applications/Xcode_12.4.app/Contents/Developer
     strategy:
       matrix:
-        destination: ["OS=14.1,name=iPhone 11 Pro"]
+        destination: ["OS=14.4,name=iPhone 12 Pro"]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -25,7 +25,7 @@ jobs:
     name: Test macOS (Swift 5.3)
     runs-on: macOS-latest 
     env:
-      DEVELOPER_DIR: /Applications/Xcode_12.4.app/Contents/Developer
+      DEVELOPER_DIR: /Applications/Xcode_12.1.app/Contents/Developer
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -50,7 +50,7 @@ jobs:
       DEVELOPER_DIR: /Applications/Xcode_12.4.app/Contents/Developer
     strategy:
       matrix:
-        destination: ["OS=14.0,name=Apple TV 4K"]
+        destination: ["OS=14.4,name=Apple TV 4K"]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
