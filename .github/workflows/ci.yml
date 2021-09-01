@@ -17,9 +17,11 @@ jobs:
         destination: ["OS=14.4,name=iPhone 12 Pro"]
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-ruby@v1
+      - name: Setup - Ruby and bundler dependencies
+        uses: ruby/setup-ruby@v1.57.0
         with:
-          ruby-version: 2.6
+          ruby-version: 2.6.0
+          bundler-cache: true
       - name: Test - iOS
         run: bundle exec fastlane run_iOS_tests
       # - name: iOS - ${{ matrix.destination }}
