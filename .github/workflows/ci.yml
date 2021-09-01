@@ -16,10 +16,14 @@ jobs:
       matrix:
         destination: ["OS=14.4,name=iPhone 12 Pro"]
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: iOS - ${{ matrix.destination }}
-        run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "WIPFoundation.xcodeproj" -scheme "WIPFoundation iOS" -destination "${{ matrix.destination }}" clean test | xcpretty
+      - uses: actions/checkout@v2
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.6
+      - name: Test - iOS
+        run: bundle exec fastlane run_iOS_tests
+      # - name: iOS - ${{ matrix.destination }}
+      #   run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "WIPFoundation.xcodeproj" -scheme "WIPFoundation iOS" -destination "${{ matrix.destination }}" clean test | xcpretty
 
   macOS_5_3:
     name: Test macOS (Swift 5.3)

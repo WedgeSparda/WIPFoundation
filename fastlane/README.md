@@ -15,6 +15,21 @@ Install _fastlane_ using
 or alternatively using `brew install fastlane`
 
 # Available Actions
+### run_iOS_tests
+```
+fastlane run_iOS_tests
+```
+
+### run_tvOS_tests
+```
+fastlane run_tvOS_tests
+```
+
+### run_macOS_tests
+```
+fastlane run_macOS_tests
+```
+
 ### tests
 ```
 fastlane tests
