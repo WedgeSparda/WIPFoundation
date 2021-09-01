@@ -8,13 +8,13 @@ public class HTTPClient {
         self.urlSession = urlSession
     }
 
-    @discardableResult
-    func request(with request: URLRequest) -> URLSessionDataTask? {
-        let dataTask: URLSessionDataTask = self.urlSession.dataTask(with: request) { data, response, error in
-            
-        }
-
-        dataTask.resume()
-        return dataTask
-    }
+//    @discardableResult
+//    func request(with request: URLRequest) -> URLSessionDataTask? {
+//        let dataTask: URLSessionDataTask = self.urlSession.dataTask(with: request) { data, response, error in
+//            
+//        }
+//
+//        dataTask.resume()
+//        return dataTask
+//    }
 }
