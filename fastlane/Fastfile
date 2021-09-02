@@ -1,46 +1,29 @@
 default_platform(:ios)
 
-# Public lanes
-
-desc "Run all tests"
-lane :tests do
-  run_macOS_tests
-  run_iOS_tests
-  run_tvOS_tests
-end
-
-desc "Run tests on CI"
-lane :tests_ci do
-if ENV["DESTINATION"].include? "watchOS" then
-  build(destination: ENV["DESTINATION"], swift_version: ENV["SWIFT_VERSION"], scheme: ENV["SCHEME"])
-else
-  test_ci(destination: ENV["DESTINATION"], swift_version: ENV["SWIFT_VERSION"], scheme: ENV["SCHEME"])
-end
-
 # Private lanes
 
-private_lane :run_iOS_tests do
-  scan(
-    project: "WIPFoundation.xcodeproj",
-    scheme: "WIPFoundation iOS"
-  ) 
-end
+# private_lane :run_iOS_tests do
+#   scan(
+#     project: "WIPFoundation.xcodeproj",
+#     scheme: "WIPFoundation iOS"
+#   ) 
+# end
 
-private_lane :run_tvOS_tests do
-  scan(
-    project: "WIPFoundation.xcodeproj", 
-    scheme: "WIPFoundation tvOS"
-  ) 
-end
+# private_lane :run_tvOS_tests do
+#   scan(
+#     project: "WIPFoundation.xcodeproj", 
+#     scheme: "WIPFoundation tvOS"
+#   ) 
+# end
 
-private_lane :run_macOS_tests do
-  scan(
-    project: "WIPFoundation.xcodeproj", 
-    scheme: "WIPFoundation macOS"
-  ) 
-end
+# private_lane :run_macOS_tests do
+#   scan(
+#     project: "WIPFoundation.xcodeproj", 
+#     scheme: "WIPFoundation macOS"
+#   ) 
+# end
 
-private_lane :test_ci do |options|
+lane :test do |options|
   scan(
     scheme: options[:scheme], 
     clean: true, 
@@ -49,7 +32,7 @@ private_lane :test_ci do |options|
   )
 end
 
-private lane :build do |options|
+lane :build do |options|
   gym(
     project: "WIPFoundation.xcodeproj",
     configuration: "Debug",
@@ -57,4 +40,27 @@ private lane :build do |options|
     xcargs: "SWIFT_VERSION=#{options[:swift_version]}",
     destination: options[:destination]
   )
+end
+
+# Public lanes
+
+desc "Run tests"
+lane :tests do
+  test(destination: "platform=macOS", swift_version: "5.0", scheme: "WIPFoundation macOS")
+  test(destination: "iOS Simulator,name=iPhone Xʀ (14.5)", swift_version: "5.0", scheme: "WIPFoundation iOS")
+  # test(destination: "tvOS Simulator,name=Apple TV", swift_version: "5.0", scheme: "WIPFoundation tvOS")
+  build(destination: "watchOS Simulator,name=Apple Watch Series 5 - 40mm", swift_version: "5.0", scheme: "WIPFoundation watchOS")
+  # run_macOS_tests
+  # run_iOS_tests
+  # run_tvOS_tests
+end
+
+desc "Run tests on CI"
+lane :tests_ci do
+if ENV["DESTINATION"].include? "watchOS" then
+  build(destination: ENV["DESTINATION"], swift_version: ENV["SWIFT_VERSION"], scheme: ENV["SCHEME"])
+else
+  test(destination: ENV["DESTINATION"], swift_version: ENV["SWIFT_VERSION"], scheme: ENV["SCHEME"])
+end
+
 end

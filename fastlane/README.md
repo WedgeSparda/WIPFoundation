@@ -15,29 +15,29 @@ Install _fastlane_ using
 or alternatively using `brew install fastlane`
 
 # Available Actions
-### run_iOS_tests
+### test
 ```
-fastlane run_iOS_tests
-```
-
-### run_tvOS_tests
-```
-fastlane run_tvOS_tests
+fastlane test
 ```
 
-### run_macOS_tests
+### build
 ```
-fastlane run_macOS_tests
+fastlane build
 ```
 
 ### tests
 ```
 fastlane tests
 ```
-Run the tests
+Run tests
+### test_ci
+```
+fastlane test_ci
+```
+Run tests on CI
 
 ----
 
-This README.md is auto-generated and will be re-generated every time [fastlane](https://fastlane.tools) is run.
+This README.md is auto-generated and will be re-generated every time [_fastlane_](https://fastlane.tools) is run.
 More information about fastlane can be found on [fastlane.tools](https://fastlane.tools).
 The documentation of fastlane can be found on [docs.fastlane.tools](https://docs.fastlane.tools).

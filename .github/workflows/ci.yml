@@ -37,7 +37,7 @@ jobs:
           DESTINATION: platform=${{ matrix.targets.destination }}
           SWIFT_VERSION: ${{ matrix.swift-version }}
           SCHEME: ${{ matrix.targets.scheme }}
-        run: bundle exec fastlane test_ci
+        run: bundle exec fastlane tests_ci
 
   # iOS:
   #   name: Test iOS
