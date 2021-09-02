@@ -2,13 +2,10 @@ disabled_rules:
   - identifier_name
   - trailing_newline
   - trailing_whitespace
+
+opt_in_rules:
   - force_cast
   - force_try
-
-line_length:
-  warning: 250
-  error: 1000
-
-function_body_length:
-  warning: 300
-  error: 500
+  - file_length
+  - line_length
+  - function_body_length
