@@ -16,7 +16,6 @@ jobs:
           - {destination: 'platform=macOS', scheme: 'WIPFoundation macOS'}
           - {destination: 'platform=iOS Simulator,name=iPhone 8', scheme: 'WIPFoundation iOS'}
           - {destination: 'platform=tvOS Simulator,name=Apple TV', scheme: 'WIPFoundation tvOS'}
-          - {destination: 'platform=watchOS Simulator,name=Apple Watch Series 5 - 40mm', scheme: 'WIPFoundation watchOS'}
         swift-version: [5.0]
     steps:
       - uses: actions/checkout@v1

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		089974B5595BC37C1D59DA7F /* WIPFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66CB3B51B5829BB20E22E6B6 /* WIPFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0E0D308DD69CD285F142E4E8 /* WIPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CB3B51B5829BB20E22E6B6 /* WIPFoundation.framework */; };
+		089974B5595BC37C1D59DA7F /* WIPFoundation iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66CB3B51B5829BB20E22E6B6 /* WIPFoundation iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0E0D308DD69CD285F142E4E8 /* WIPFoundation iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CB3B51B5829BB20E22E6B6 /* WIPFoundation iOS.framework */; };
 		18687DA8514A9AB2D604A533 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4B23266D98146201BA091 /* XCTestManifests.swift */; };
 		250195B5538E61ABC7EFA4AE /* WIPCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBFD758F6C844741F3A8D2 /* WIPCompatibleType.swift */; };
 		364384ED54A6A53A8606028C /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED8CAED9D70B3EA6B6F1576 /* HTTPClient.swift */; };
@@ -21,15 +21,15 @@
 		602BDF650A98C6042972C7C2 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE6A46234917E9ABF5B5C0 /* StringTests.swift */; };
 		61A2DE775FCDABD387DB13AC /* String+WIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA4BEACFEB01BADA3618D0 /* String+WIP.swift */; };
 		848CDD3DD1C1C74D866D6EAE /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE6A46234917E9ABF5B5C0 /* StringTests.swift */; };
-		8FBA366A5125AB5A44B42EE6 /* WIPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269151E72449EBF0FE2FBF04 /* WIPFoundation.framework */; };
+		8FBA366A5125AB5A44B42EE6 /* WIPFoundation macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269151E72449EBF0FE2FBF04 /* WIPFoundation macOS.framework */; };
 		9081258E77BF4A6A04710146 /* String+WIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA4BEACFEB01BADA3618D0 /* String+WIP.swift */; };
-		93AF40AA58AF0595661FC2E8 /* WIPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1FCE0432B8508717172E37 /* WIPFoundation.framework */; };
+		93AF40AA58AF0595661FC2E8 /* WIPFoundation tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1FCE0432B8508717172E37 /* WIPFoundation tvOS.framework */; };
 		96210467CC3DBA4A40AE8DEE /* WIPCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBFD758F6C844741F3A8D2 /* WIPCompatibleType.swift */; };
 		97E925EE0B032520364E935A /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4B23266D98146201BA091 /* XCTestManifests.swift */; };
 		9A9A8662186D4F3EC1978EE0 /* WIPCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBFD758F6C844741F3A8D2 /* WIPCompatibleType.swift */; };
-		A6B809AD009D69F35C0C1BDB /* WIPFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 269151E72449EBF0FE2FBF04 /* WIPFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A6B809AD009D69F35C0C1BDB /* WIPFoundation macOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 269151E72449EBF0FE2FBF04 /* WIPFoundation macOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B997635BB46D142C93279397 /* String+WIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA4BEACFEB01BADA3618D0 /* String+WIP.swift */; };
-		D65FF2E14D9A2E338091CFD9 /* WIPFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF1FCE0432B8508717172E37 /* WIPFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D65FF2E14D9A2E338091CFD9 /* WIPFoundation tvOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF1FCE0432B8508717172E37 /* WIPFoundation tvOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FFB77805D9CD3071BD8E4C11 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED8CAED9D70B3EA6B6F1576 /* HTTPClient.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +64,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A6B809AD009D69F35C0C1BDB /* WIPFoundation.framework in Embed Frameworks */,
+				A6B809AD009D69F35C0C1BDB /* WIPFoundation macOS.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,7 +75,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				089974B5595BC37C1D59DA7F /* WIPFoundation.framework in Embed Frameworks */,
+				089974B5595BC37C1D59DA7F /* WIPFoundation iOS.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,7 +86,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D65FF2E14D9A2E338091CFD9 /* WIPFoundation.framework in Embed Frameworks */,
+				D65FF2E14D9A2E338091CFD9 /* WIPFoundation tvOS.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,21 +95,21 @@
 
 /* Begin PBXFileReference section */
 		22F78EC15D2376C0CC695E34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		269151E72449EBF0FE2FBF04 /* WIPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		269151E72449EBF0FE2FBF04 /* WIPFoundation macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "WIPFoundation macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BCBFD758F6C844741F3A8D2 /* WIPCompatibleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIPCompatibleType.swift; sourceTree = "<group>"; };
-		3B86A8F66ACFE861DDAB75E2 /* WIPFoundation iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WIPFoundation iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		50728C751070CADAA1B71EA6 /* WIPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B86A8F66ACFE861DDAB75E2 /* WIPFoundation iOS Tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = "WIPFoundation iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50728C751070CADAA1B71EA6 /* WIPFoundation watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "WIPFoundation watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB68711DD21613D17F123C5 /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
 		64C4B23266D98146201BA091 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
-		66CB3B51B5829BB20E22E6B6 /* WIPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66CB3B51B5829BB20E22E6B6 /* WIPFoundation iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "WIPFoundation iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF5F07CA380B9296968D344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7ED8CAED9D70B3EA6B6F1576 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		8140A23CD601AB0BBAED2E2A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		82DE6A46234917E9ABF5B5C0 /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
 		884F2A7C9E2AE308F7E0731E /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		A8F9B2BE4C0E1D2CA7BCFF6C /* WIPFoundation macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WIPFoundation macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF1FCE0432B8508717172E37 /* WIPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAA2B02CD11A3DCBA118B0F1 /* WIPFoundation tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WIPFoundation tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF1FCE0432B8508717172E37 /* WIPFoundation tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "WIPFoundation tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAA2B02CD11A3DCBA118B0F1 /* WIPFoundation tvOS Tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = "WIPFoundation tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFCA4BEACFEB01BADA3618D0 /* String+WIP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+WIP.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,7 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93AF40AA58AF0595661FC2E8 /* WIPFoundation.framework in Frameworks */,
+				93AF40AA58AF0595661FC2E8 /* WIPFoundation tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FBA366A5125AB5A44B42EE6 /* WIPFoundation.framework in Frameworks */,
+				8FBA366A5125AB5A44B42EE6 /* WIPFoundation macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E0D308DD69CD285F142E4E8 /* WIPFoundation.framework in Frameworks */,
+				0E0D308DD69CD285F142E4E8 /* WIPFoundation iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,12 +210,12 @@
 			isa = PBXGroup;
 			children = (
 				3B86A8F66ACFE861DDAB75E2 /* WIPFoundation iOS Tests.xctest */,
-				66CB3B51B5829BB20E22E6B6 /* WIPFoundation.framework */,
+				66CB3B51B5829BB20E22E6B6 /* WIPFoundation iOS.framework */,
 				A8F9B2BE4C0E1D2CA7BCFF6C /* WIPFoundation macOS Tests.xctest */,
-				269151E72449EBF0FE2FBF04 /* WIPFoundation.framework */,
+				269151E72449EBF0FE2FBF04 /* WIPFoundation macOS.framework */,
 				EAA2B02CD11A3DCBA118B0F1 /* WIPFoundation tvOS Tests.xctest */,
-				DF1FCE0432B8508717172E37 /* WIPFoundation.framework */,
-				50728C751070CADAA1B71EA6 /* WIPFoundation.framework */,
+				DF1FCE0432B8508717172E37 /* WIPFoundation tvOS.framework */,
+				50728C751070CADAA1B71EA6 /* WIPFoundation watchOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -235,7 +235,7 @@
 			);
 			name = "WIPFoundation iOS";
 			productName = "WIPFoundation iOS";
-			productReference = 66CB3B51B5829BB20E22E6B6 /* WIPFoundation.framework */;
+			productReference = 66CB3B51B5829BB20E22E6B6 /* WIPFoundation iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		66354D9C06E680994BA07D92 /* WIPFoundation tvOS */ = {
@@ -250,7 +250,7 @@
 			);
 			name = "WIPFoundation tvOS";
 			productName = "WIPFoundation tvOS";
-			productReference = DF1FCE0432B8508717172E37 /* WIPFoundation.framework */;
+			productReference = DF1FCE0432B8508717172E37 /* WIPFoundation tvOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D32E4D9B7F6C4BFD9889E60B /* WIPFoundation tvOS Tests */ = {
@@ -319,7 +319,7 @@
 			);
 			name = "WIPFoundation macOS";
 			productName = "WIPFoundation macOS";
-			productReference = 269151E72449EBF0FE2FBF04 /* WIPFoundation.framework */;
+			productReference = 269151E72449EBF0FE2FBF04 /* WIPFoundation macOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FC40D2C0DB7644970A6963B9 /* WIPFoundation watchOS */ = {
@@ -334,7 +334,7 @@
 			);
 			name = "WIPFoundation watchOS";
 			productName = "WIPFoundation watchOS";
-			productReference = 50728C751070CADAA1B71EA6 /* WIPFoundation.framework */;
+			productReference = 50728C751070CADAA1B71EA6 /* WIPFoundation watchOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -343,14 +343,15 @@
 		17B11B32A29CDA419109983D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = 1CD22FB14110B48D1F020DCA /* Build configuration list for PBXProject "WIPFoundation" */;
 			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				Base,
 				en,
 			);
 			mainGroup = 3D229661308FC4398F047424;
@@ -460,10 +461,9 @@
 		1849D4C6354A2CA0FAE7EC3B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 7KA8U6R4E6;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -488,7 +488,6 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 7KA8U6R4E6;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -504,7 +503,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 7KA8U6R4E6;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -522,7 +520,6 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 7KA8U6R4E6;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -538,7 +535,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 7KA8U6R4E6;
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -555,7 +551,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 7KA8U6R4E6;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -571,10 +566,9 @@
 		8981D836B3C6EF81D254B3E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 7KA8U6R4E6;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -604,7 +598,6 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -620,7 +613,6 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -645,8 +637,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -658,10 +649,9 @@
 		B59F34BC1710CEC93D35CDF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 7KA8U6R4E6;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -680,10 +670,9 @@
 		C40C153186B9887FD8F67B83 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 7KA8U6R4E6;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -713,7 +702,6 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -729,7 +717,6 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -748,12 +735,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -761,7 +746,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 7KA8U6R4E6;
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -777,10 +761,9 @@
 		EFDD97E037C1C089A24C1555 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 7KA8U6R4E6;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -803,11 +786,10 @@
 		F204D794DD90726AFB89CE09 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 7KA8U6R4E6;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -829,11 +811,10 @@
 		F205BDC93653E961B7BF963B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 7KA8U6R4E6;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -855,10 +836,9 @@
 		FF9F85A9CB0807EFEF0D9126 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 7KA8U6R4E6;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
