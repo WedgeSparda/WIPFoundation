@@ -1,33 +1,60 @@
 default_platform(:ios)
 
+# Public lanes
+
+desc "Run all tests"
+lane :tests do
+  run_macOS_tests
+  run_iOS_tests
+  run_tvOS_tests
+end
+
+desc "Run tests on CI"
+lane :tests_ci do
+  if ENV["DESTINATION"].include? "watchOS" then
+    build(destination: ENV["DESTINATION"], swift_version: ENV["SWIFT_VERSION"], ENV["SCHEME"])
+else
+    test_ci(destination: ENV["DESTINATION"], swift_version: ENV["SWIFT_VERSION"], ENV["SCHEME"])
+end
+
 # Private lanes
 
-lane :run_iOS_tests do
+private_lane :run_iOS_tests do
   scan(
     project: "WIPFoundation.xcodeproj",
     scheme: "WIPFoundation iOS"
   ) 
 end
 
-lane :run_tvOS_tests do
+private_lane :run_tvOS_tests do
   scan(
     project: "WIPFoundation.xcodeproj", 
     scheme: "WIPFoundation tvOS"
   ) 
 end
 
-lane :run_macOS_tests do
+private_lane :run_macOS_tests do
   scan(
     project: "WIPFoundation.xcodeproj", 
     scheme: "WIPFoundation macOS"
   ) 
 end
 
-# Public lanes
+private_lane :test_ci do |options|
+  scan(
+    scheme: options[:scheme], 
+    clean: true, 
+    xcargs: "SWIFT_VERSION=#{options[:swift_version]}",
+    destination: options[:destination]
+  )
+end
 
-desc "Run the tests"
-lane :tests do
-  run_macOS_tests
-  run_iOS_tests
-  run_tvOS_tests
+private lane :build do |options|
+  gym(
+    project: "WIPFoundation.xcodeproj",
+    configuration: "Debug",
+    scheme: options[:scheme],
+    xcargs: "SWIFT_VERSION=#{options[:swift_version]}",
+    destination: options[:destination]
+  )
 end
