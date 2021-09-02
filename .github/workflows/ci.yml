@@ -13,10 +13,10 @@ jobs:
     strategy:
       matrix:
         targets:
-          - {destination: 'macOS', scheme: 'WIPFoundation macOS'}
-          - {destination: 'iOS Simulator,name=iPhone 8', scheme: 'WIPFoundation iOS'}
-          - {destination: 'tvOS Simulator,name=Apple TV', scheme: 'WIPFoundation tvOS'}
-          - {destination: 'watchOS Simulator,name=Apple Watch Series 5 - 40mm', scheme: 'WIPFoundation watchOS'}
+          - {destination: 'platform=macOS', scheme: 'WIPFoundation macOS'}
+          - {destination: 'platform=iOS Simulator,name=iPhone 8', scheme: 'WIPFoundation iOS'}
+          - {destination: 'platform=tvOS Simulator,name=Apple TV', scheme: 'WIPFoundation tvOS'}
+          - {destination: 'platform=watchOS Simulator,name=Apple Watch Series 5 - 40mm', scheme: 'WIPFoundation watchOS'}
         swift-version: [5.0]
     steps:
       - uses: actions/checkout@v1
@@ -34,7 +34,7 @@ jobs:
         run: bundle install --jobs 4 --retry 3
       - name: Run tests
         env:
-          DESTINATION: platform=${{ matrix.targets.destination }}
+          DESTINATION: ${{ matrix.targets.destination }}
           SWIFT_VERSION: ${{ matrix.swift-version }}
           SCHEME: ${{ matrix.targets.scheme }}
         run: bundle exec fastlane tests_ci

@@ -30,9 +30,14 @@ fastlane build
 fastlane tests
 ```
 Run tests
-### test_ci
+### build_all
 ```
-fastlane test_ci
+fastlane build_all
+```
+Build all
+### tests_ci
+```
+fastlane tests_ci
 ```
 Run tests on CI
 
