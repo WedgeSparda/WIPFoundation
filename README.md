@@ -34,8 +34,7 @@ All extensions are based on the {**WIP**} *Core* namespacing approach. You can k
 In order to work with this project you need:
 
 - [XcodeGen](https://github.com/yonaskolb/XcodeGen): to manipulate the `xcodeproj`.
-- [SwiftLint](https://github.com/realm/SwiftLint): to keep the code styling.
-- [Mint](https://github.com/yonaskolb/Mint): to install `XcodeGen` and `SwiftLint`
+- [Mint](https://github.com/yonaskolb/Mint): to install `XcodeGen`.
 - [Fastlane](https://fastlane.tools/): to run tests and more.
 
 
