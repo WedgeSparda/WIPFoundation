@@ -16,7 +16,7 @@ jobs:
           - {destination: 'platform=macOS', scheme: 'WIPFoundation macOS'}
           - {destination: 'platform=iOS Simulator,name=iPhone 8', scheme: 'WIPFoundation iOS'}
           - {destination: 'platform=tvOS Simulator,name=Apple TV', scheme: 'WIPFoundation tvOS'}
-        swift-version: [5.4]
+        swift-version: [5.5]
     steps:
       - uses: actions/checkout@v3
       - uses: actions/cache@v3
@@ -46,7 +46,7 @@ jobs:
       - name: Install Swift
         uses: sersoft-gmbh/swifty-linux-action@v2
         with:
-          release-version: 5.4
+          release-version: 5.5
       - name: Build Linux
         run: |
           swift build

@@ -9,31 +9,31 @@
 /* Begin PBXBuildFile section */
 		089974B5595BC37C1D59DA7F /* WIPFoundation iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66CB3B51B5829BB20E22E6B6 /* WIPFoundation iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0E0D308DD69CD285F142E4E8 /* WIPFoundation iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CB3B51B5829BB20E22E6B6 /* WIPFoundation iOS.framework */; };
+		1497A49D2B78B6D39A75733D /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2355602FA677B0D0F8214C /* NetworkResponse.swift */; };
 		18687DA8514A9AB2D604A533 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4B23266D98146201BA091 /* XCTestManifests.swift */; };
 		250195B5538E61ABC7EFA4AE /* WIPCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBFD758F6C844741F3A8D2 /* WIPCompatibleType.swift */; };
 		364384ED54A6A53A8606028C /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED8CAED9D70B3EA6B6F1576 /* HTTPClient.swift */; };
 		395ECC8FD4C0FF1D09032B73 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4B23266D98146201BA091 /* XCTestManifests.swift */; };
 		3A4DD90B5CC6CA3D980B0CA8 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED8CAED9D70B3EA6B6F1576 /* HTTPClient.swift */; };
 		3FD09A0D0E660E0CEB6F5269 /* String+WIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA4BEACFEB01BADA3618D0 /* String+WIP.swift */; };
+		43793CA5E1E8B231429B68F9 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2355602FA677B0D0F8214C /* NetworkResponse.swift */; };
 		4887C2DA2FB0589B1D6A852E /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE6A46234917E9ABF5B5C0 /* StringTests.swift */; };
 		4BC6A117F7DC392C4CB096D7 /* WIPCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBFD758F6C844741F3A8D2 /* WIPCompatibleType.swift */; };
-		53121A5DE7DDFA6052D33701 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA10CDB77A0A7EE3E03FCAD /* NetworkResponse.swift */; };
 		5C3E72BF54E200171BCBA454 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED8CAED9D70B3EA6B6F1576 /* HTTPClient.swift */; };
 		602BDF650A98C6042972C7C2 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE6A46234917E9ABF5B5C0 /* StringTests.swift */; };
 		61A2DE775FCDABD387DB13AC /* String+WIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA4BEACFEB01BADA3618D0 /* String+WIP.swift */; };
 		848CDD3DD1C1C74D866D6EAE /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DE6A46234917E9ABF5B5C0 /* StringTests.swift */; };
 		8FBA366A5125AB5A44B42EE6 /* WIPFoundation macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269151E72449EBF0FE2FBF04 /* WIPFoundation macOS.framework */; };
 		9081258E77BF4A6A04710146 /* String+WIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA4BEACFEB01BADA3618D0 /* String+WIP.swift */; };
-		92280CB81634F8520DED01EC /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA10CDB77A0A7EE3E03FCAD /* NetworkResponse.swift */; };
 		93AF40AA58AF0595661FC2E8 /* WIPFoundation tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1FCE0432B8508717172E37 /* WIPFoundation tvOS.framework */; };
 		96210467CC3DBA4A40AE8DEE /* WIPCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBFD758F6C844741F3A8D2 /* WIPCompatibleType.swift */; };
 		97E925EE0B032520364E935A /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4B23266D98146201BA091 /* XCTestManifests.swift */; };
 		9A9A8662186D4F3EC1978EE0 /* WIPCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBFD758F6C844741F3A8D2 /* WIPCompatibleType.swift */; };
 		A6B809AD009D69F35C0C1BDB /* WIPFoundation macOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 269151E72449EBF0FE2FBF04 /* WIPFoundation macOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B641FE46AFDB6B956DD0A1D1 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA10CDB77A0A7EE3E03FCAD /* NetworkResponse.swift */; };
-		B885D2DE771285B808CED112 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA10CDB77A0A7EE3E03FCAD /* NetworkResponse.swift */; };
 		B997635BB46D142C93279397 /* String+WIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA4BEACFEB01BADA3618D0 /* String+WIP.swift */; };
 		D65FF2E14D9A2E338091CFD9 /* WIPFoundation tvOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF1FCE0432B8508717172E37 /* WIPFoundation tvOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E62BB71F4CA36653A8715DD0 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2355602FA677B0D0F8214C /* NetworkResponse.swift */; };
+		EF5BD2C6C07CAF5A336A2B3E /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2355602FA677B0D0F8214C /* NetworkResponse.swift */; };
 		FFB77805D9CD3071BD8E4C11 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED8CAED9D70B3EA6B6F1576 /* HTTPClient.swift */; };
 /* End PBXBuildFile section */
 
@@ -99,21 +99,21 @@
 
 /* Begin PBXFileReference section */
 		22F78EC15D2376C0CC695E34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		269151E72449EBF0FE2FBF04 /* WIPFoundation macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "WIPFoundation macOS.framework"; path = WIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		269151E72449EBF0FE2FBF04 /* WIPFoundation macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "WIPFoundation macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BCBFD758F6C844741F3A8D2 /* WIPCompatibleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIPCompatibleType.swift; sourceTree = "<group>"; };
 		3B86A8F66ACFE861DDAB75E2 /* WIPFoundation iOS Tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = "WIPFoundation iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		50728C751070CADAA1B71EA6 /* WIPFoundation watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "WIPFoundation watchOS.framework"; path = WIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AA10CDB77A0A7EE3E03FCAD /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		50728C751070CADAA1B71EA6 /* WIPFoundation watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "WIPFoundation watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB68711DD21613D17F123C5 /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
 		64C4B23266D98146201BA091 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
-		66CB3B51B5829BB20E22E6B6 /* WIPFoundation iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "WIPFoundation iOS.framework"; path = WIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66CB3B51B5829BB20E22E6B6 /* WIPFoundation iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "WIPFoundation iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF5F07CA380B9296968D344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7ED8CAED9D70B3EA6B6F1576 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		7F2355602FA677B0D0F8214C /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 		8140A23CD601AB0BBAED2E2A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		82DE6A46234917E9ABF5B5C0 /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
 		884F2A7C9E2AE308F7E0731E /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		A8F9B2BE4C0E1D2CA7BCFF6C /* WIPFoundation macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WIPFoundation macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF1FCE0432B8508717172E37 /* WIPFoundation tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "WIPFoundation tvOS.framework"; path = WIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF1FCE0432B8508717172E37 /* WIPFoundation tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "WIPFoundation tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA2B02CD11A3DCBA118B0F1 /* WIPFoundation tvOS Tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = "WIPFoundation tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFCA4BEACFEB01BADA3618D0 /* String+WIP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+WIP.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,7 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				7ED8CAED9D70B3EA6B6F1576 /* HTTPClient.swift */,
-				5AA10CDB77A0A7EE3E03FCAD /* NetworkResponse.swift */,
+				7F2355602FA677B0D0F8214C /* NetworkResponse.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -350,6 +350,8 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = 1CD22FB14110B48D1F020DCA /* Build configuration list for PBXProject "WIPFoundation" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -380,7 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C3E72BF54E200171BCBA454 /* HTTPClient.swift in Sources */,
-				92280CB81634F8520DED01EC /* NetworkResponse.swift in Sources */,
+				EF5BD2C6C07CAF5A336A2B3E /* NetworkResponse.swift in Sources */,
 				61A2DE775FCDABD387DB13AC /* String+WIP.swift in Sources */,
 				9A9A8662186D4F3EC1978EE0 /* WIPCompatibleType.swift in Sources */,
 			);
@@ -400,7 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFB77805D9CD3071BD8E4C11 /* HTTPClient.swift in Sources */,
-				B641FE46AFDB6B956DD0A1D1 /* NetworkResponse.swift in Sources */,
+				43793CA5E1E8B231429B68F9 /* NetworkResponse.swift in Sources */,
 				B997635BB46D142C93279397 /* String+WIP.swift in Sources */,
 				4BC6A117F7DC392C4CB096D7 /* WIPCompatibleType.swift in Sources */,
 			);
@@ -411,7 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				364384ED54A6A53A8606028C /* HTTPClient.swift in Sources */,
-				53121A5DE7DDFA6052D33701 /* NetworkResponse.swift in Sources */,
+				E62BB71F4CA36653A8715DD0 /* NetworkResponse.swift in Sources */,
 				9081258E77BF4A6A04710146 /* String+WIP.swift in Sources */,
 				96210467CC3DBA4A40AE8DEE /* WIPCompatibleType.swift in Sources */,
 			);
@@ -422,7 +424,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A4DD90B5CC6CA3D980B0CA8 /* HTTPClient.swift in Sources */,
-				B885D2DE771285B808CED112 /* NetworkResponse.swift in Sources */,
+				1497A49D2B78B6D39A75733D /* NetworkResponse.swift in Sources */,
 				3FD09A0D0E660E0CEB6F5269 /* String+WIP.swift in Sources */,
 				250195B5538E61ABC7EFA4AE /* WIPCompatibleType.swift in Sources */,
 			);
