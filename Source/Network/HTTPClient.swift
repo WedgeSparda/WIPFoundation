@@ -25,7 +25,7 @@ import Foundation
 import FoundationNetworking
 #endif
 
-public class HTTPClient {
+open class HTTPClient {
 
     private let urlSession: URLSession
 
@@ -33,13 +33,62 @@ public class HTTPClient {
         self.urlSession = urlSession
     }
 
-//    @discardableResult
-//    func request(with request: URLRequest) -> URLSessionDataTask? {
-//        let dataTask: URLSessionDataTask = self.urlSession.dataTask(with: request) { data, response, error in
-//            
-//        }
-//
-//        dataTask.resume()
-//        return dataTask
-//    }
+    @discardableResult
+    func request(
+        with request: URLRequest,
+        completion: @escaping ((NetworkResponse) -> Void)
+    ) -> URLSessionDataTask? {
+        let dataTask: URLSessionDataTask = self.urlSession.dataTask(with: request) { [weak self] data, response, error in
+            guard let self = self else { return }
+            let response = self.createNetworkResponse(with: data, response: response, error: error, request: request)
+            completion(response)
+        }
+
+        dataTask.resume()
+        return dataTask
+    }
+    
+    func request(
+        with request: URLRequest
+    ) async -> NetworkResponse {
+        do {
+            let (data, response) = try await self.urlSession.data(for: request)
+            return createNetworkResponse(
+                with: data,
+                response: response,
+                error: nil,
+                request: request
+            )
+        } catch {
+            return createNetworkResponse(
+                with: nil,
+                response: nil,
+                error: error,
+                request: request
+            )
+        }
+    }
+}
+
+fileprivate extension HTTPClient {
+    
+    func createNetworkResponse(
+        with data: Data?,
+        response: URLResponse?,
+        error: Error?,
+        request: URLRequest
+    ) -> NetworkResponse {
+        let statusCode = (response as? HTTPURLResponse)?.statusCode
+        var result: Result<Data?, Error> {
+            guard let error = error else {
+                return .success(data)
+            }
+            return .failure(error)
+        }
+        return NetworkResponse(
+            statusCode: statusCode,
+            result: result,
+            request: request
+        )
+    }
 }

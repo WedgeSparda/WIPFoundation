@@ -25,40 +25,40 @@ targets:
     templates: [Base]
     templateAttributes:
       framework_platform: iOS
-    deploymentTarget: 14.0
+    deploymentTarget: 15.0
 
   WIPFoundation iOS Tests:
     templates: [TestsBase]
     templateAttributes:
       framework_platform: iOS
-    deploymentTarget: 14.0
+    deploymentTarget: 15.0
 
   WIPFoundation macOS:
     templates: [Base]
     templateAttributes:
       framework_platform: macOS
-    deploymentTarget: 10.15
+    deploymentTarget: 12.0
 
   WIPFoundation macOS Tests:
     templates: [TestsBase]
     templateAttributes:
       framework_platform: macOS
-    deploymentTarget: 10.15
+    deploymentTarget: 12.0
 
   WIPFoundation tvOS:
     templates: [Base]
     templateAttributes:
       framework_platform: tvOS
-    deploymentTarget: 14.0
+    deploymentTarget: 15.0
 
   WIPFoundation tvOS Tests:
     templates: [TestsBase]
     templateAttributes:
       framework_platform: tvOS
-    deploymentTarget: 14.0
+    deploymentTarget: 15.0
 
   WIPFoundation watchOS:
     templates: [Base]
     templateAttributes:
       framework_platform: watchOS
-    deploymentTarget: 7.0
+    deploymentTarget: 8.0
