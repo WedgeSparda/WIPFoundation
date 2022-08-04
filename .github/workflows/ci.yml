@@ -18,8 +18,8 @@ jobs:
           - {destination: 'platform=tvOS Simulator,name=Apple TV', scheme: 'WIPFoundation tvOS'}
         swift-version: [5.4]
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/cache@v1
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v3
         id: bundler-cache
         with:
           path: vendor/bundle
@@ -42,9 +42,9 @@ jobs:
     name: Build & Test for Linux
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Install Swift
-        uses: sersoft-gmbh/SwiftyActions@v1
+        uses: sersoft-gmbh/swifty-linux-action@v2
         with:
           release-version: 5.4
       - name: Build Linux
