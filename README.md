@@ -1,9 +1,12 @@
 # {**WIP**} *Foundation*
 
 <div align="center">
-
-<a href="https://github.com/WedgeSparda/WIPFoundation/actions?query=workflow%3ATests"><img src="https://github.com/WedgeSparda/WIPFoundation/workflows/Tests/badge.svg"/></a>
-<a href="https://swift.org/package-manager/"><img src="https://img.shields.io/badge/SPM-supported-orange.svg?style=flat"/></a>
+  <a href="https://github.com/WedgeSparda/WIPFoundation/actions?query=workflow%3ATest">
+    <img src="https://github.com/WedgeSparda/WIPFoundation/workflows/Tests/badge.svg"/>
+  </a>
+  <a href="https://swift.org/package-manager/">
+    <img src="https://img.shields.io/badge/SPM-supported-orange.svg?style=flat"/>
+  </a>
 </div>
 
 ## Summary
@@ -24,11 +27,11 @@
 All extensions are based on the {**WIP**} *Core* namespacing approach. You can know more about it [here](docs/WIPCore.md).
 
 ## Requirements
-+ iOS 13.0+ 
-+ macOS 10.14+
-+ watchOS 6.0
-+ tvOS 13.0
-+ Swift 5.0+ 
++ iOS 15.5+ 
++ macOS 12.0+
++ watchOS 8.0+
++ tvOS 15.4+
++ Swift 5.5+ 
 
 
 In order to work with this project you need:
@@ -47,7 +50,7 @@ sh scripts/install_dependencies.sh
 
 To install the framework on your project, please use:
 
-### Swift Package Manager (Xcode 12+)
+### Swift Package Manager (Xcode 13+)
 
 1. Select File > Swift Packages > Add Package Dependency
 2. Type `https://github.com/WedgeSparda/WIPFoundation` in the "Enter package repository URL"
