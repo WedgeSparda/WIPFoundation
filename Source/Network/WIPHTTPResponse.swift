@@ -21,11 +21,8 @@
 // SOFTWARE.
 
 import Foundation
-#if canImport(FoundationNetworking)
-import FoundationNetworking
-#endif
 
-public struct NetworkResponse {
+public struct WIPHTTPResponse {
     public let statusCode: Int?
     public let result: Result<Data?, Error>
     public let request: URLRequest

@@ -21,11 +21,9 @@
 // SOFTWARE.
 
 import Foundation
-#if canImport(FoundationNetworking)
-import FoundationNetworking
-#endif
+import Combine
 
-open class HTTPClient {
+open class WIPHTTPClient {
 
     private let urlSession: URLSession
 
@@ -36,11 +34,11 @@ open class HTTPClient {
     @discardableResult
     func request(
         with request: URLRequest,
-        completion: @escaping ((NetworkResponse) -> Void)
-    ) -> URLSessionDataTask? {
+        completion: @escaping ((WIPHTTPResponse) -> Void)
+    ) -> URLSessionDataTask {
         let dataTask: URLSessionDataTask = self.urlSession.dataTask(with: request) { [weak self] data, response, error in
             guard let self = self else { return }
-            let response = self.createNetworkResponse(with: data, response: response, error: error, request: request)
+            let response = self.createResponse(with: data, response: response, error: error, request: request)
             completion(response)
         }
 
@@ -50,34 +48,34 @@ open class HTTPClient {
     
     func request(
         with request: URLRequest
-    ) async -> NetworkResponse {
+    ) async -> WIPHTTPResponse {
         do {
             let (data, response) = try await self.urlSession.data(for: request)
-            return createNetworkResponse(
-                with: data,
-                response: response,
-                error: nil,
-                request: request
-            )
+            return createResponse( with: data, response: response, error: nil, request: request)
         } catch {
-            return createNetworkResponse(
-                with: nil,
-                response: nil,
-                error: error,
-                request: request
-            )
+            return createResponse(with: nil, response: nil, error: error, request: request)
         }
+    }
+    
+    func request(
+        with request: URLRequest
+    ) -> AnyPublisher<WIPHTTPResponse, URLError> {
+        urlSession.dataTaskPublisher(for: request)
+            .map { data, response in
+                self.createResponse(with: data, response: response, error: nil, request: request)
+            }
+            .eraseToAnyPublisher()
     }
 }
 
-fileprivate extension HTTPClient {
+fileprivate extension WIPHTTPClient {
     
-    func createNetworkResponse(
+    func createResponse(
         with data: Data?,
         response: URLResponse?,
         error: Error?,
         request: URLRequest
-    ) -> NetworkResponse {
+    ) -> WIPHTTPResponse {
         let statusCode = (response as? HTTPURLResponse)?.statusCode
         var result: Result<Data?, Error> {
             guard let error = error else {
@@ -85,7 +83,7 @@ fileprivate extension HTTPClient {
             }
             return .failure(error)
         }
-        return NetworkResponse(
+        return WIPHTTPResponse(
             statusCode: statusCode,
             result: result,
             request: request
