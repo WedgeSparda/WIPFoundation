@@ -120,9 +120,6 @@ class StringTests: XCTestCase {
         ("testNSRange", testNSRange)
     ]
 
-    // MARK: - Without Linux Support
-
-    #if !os(Linux)
     func testValidEmail() {
         let email = "foaisdhfoiasdfaoisdf"
 
@@ -141,5 +138,4 @@ class StringTests: XCTestCase {
         ("testValidEmail", testValidEmail),
         ("testValidURL", testValidURL)
     ]
-    #endif
 }

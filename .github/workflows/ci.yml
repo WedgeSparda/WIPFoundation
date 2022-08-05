@@ -37,17 +37,3 @@ jobs:
           SWIFT_VERSION: ${{ matrix.swift-version }}
           SCHEME: ${{ matrix.targets.scheme }}
         run: bundle exec fastlane tests_ci
-
-  Linux:
-    name: Build & Test for Linux
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Install Swift
-        uses: sersoft-gmbh/swifty-linux-action@v2
-        with:
-          release-version: 5.5
-      - name: Build Linux
-        run: |
-          swift build
-          swift test

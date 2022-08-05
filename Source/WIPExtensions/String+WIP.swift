@@ -133,14 +133,7 @@ public extension WIPContainer where T == String {
             return type
         }
     }
-}
 
-// MARK: - Without Linux Support
-// These extended helpers uses core libs that don't have Linux suport yet
-// Check https://github.com/apple/swift-corelibs-foundation for more info
-
-#if !os(Linux)
-public extension WIPContainer where T == String {
     /// Basic match of the current string with email regular expression.
     ///
     /// - Parameters: stricted: if true it doesn't let email like user+1@mail.com.
@@ -164,4 +157,3 @@ public extension WIPContainer where T == String {
         return predicate.evaluate(with: type)
     }
 }
-#endif
