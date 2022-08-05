@@ -25,13 +25,13 @@ targets:
     templates: [Base]
     templateAttributes:
       framework_platform: iOS
-    deploymentTarget: 15.0
+    deploymentTarget: 15.5
 
   WIPFoundation iOS Tests:
     templates: [TestsBase]
     templateAttributes:
       framework_platform: iOS
-    deploymentTarget: 15.0
+    deploymentTarget: 15.5
 
   WIPFoundation macOS:
     templates: [Base]
@@ -49,13 +49,13 @@ targets:
     templates: [Base]
     templateAttributes:
       framework_platform: tvOS
-    deploymentTarget: 15.0
+    deploymentTarget: 15.4
 
   WIPFoundation tvOS Tests:
     templates: [TestsBase]
     templateAttributes:
       framework_platform: tvOS
-    deploymentTarget: 15.0
+    deploymentTarget: 15.4
 
   WIPFoundation watchOS:
     templates: [Base]
