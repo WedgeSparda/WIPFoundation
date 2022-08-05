@@ -13,9 +13,9 @@ jobs:
     strategy:
       matrix:
         targets:
-          - {destination: 'platform=macOS', scheme: 'WIPFoundation macOS'}
-          - {destination: 'platform=iOS Simulator,name=iPhone 8', scheme: 'WIPFoundation iOS'}
-          - {destination: 'platform=tvOS Simulator,name=Apple TV', scheme: 'WIPFoundation tvOS'}
+          - {destination: 'platform=macOS,OS=12.0', scheme: 'WIPFoundation macOS'}
+          - {destination: 'platform=iOS Simulator,name=iPhone 8,OS=15.0', scheme: 'WIPFoundation iOS'}
+          - {destination: 'platform=tvOS Simulator,name=Apple TV,OS=15.0', scheme: 'WIPFoundation tvOS'}
         swift-version: [5.5]
     steps:
       - uses: actions/checkout@v3
@@ -52,19 +52,19 @@ jobs:
   #         swift build
   #         swift test
 
-  Linux:
-    name: Swift ${{ matrix.swift }} on ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
-    strategy: 
-      matrix:
-        os: [ubuntu-latests, macos-latest]
-        swift: ["5.5", "5.6.1"]
-    steps:
-      - uses: actions/checkout@v3
-      - uses: swift-actions/setup-swift@v1
-        with:
-          swift-version: ${{ matrix.swift }}
-      - name: Build Swift
-        run: swift build
-      - name: Test Swift
-        run: swift test
+  # Linux:
+  #   name: Swift ${{ matrix.swift }} on ${{ matrix.os }}
+  #   runs-on: ${{ matrix.os }}
+  #   strategy: 
+  #     matrix:
+  #       os: [ubuntu-latests, macos-latest]
+  #       swift: ["5.5", "5.6.1"]
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - uses: swift-actions/setup-swift@v1
+  #       with:
+  #         swift-version: ${{ matrix.swift }}
+  #     - name: Build Swift
+  #       run: swift build
+  #     - name: Test Swift
+  #       run: swift test
