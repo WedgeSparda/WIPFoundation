@@ -38,33 +38,16 @@ jobs:
           SCHEME: ${{ matrix.targets.scheme }}
         run: bundle exec fastlane tests_ci
 
-  # Linux:
-  #   name: Build & Test for Linux
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v3
-  #     - name: Install Swift
-  #       uses: sersoft-gmbh/swifty-linux-action@v2
-  #       with:
-  #         release-version: 5.5
-  #     - name: Build Linux
-  #       run: |
-  #         swift build
-  #         swift test
-
   Linux:
-    name: Swift ${{ matrix.swift }} on ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
-    strategy: 
-      matrix:
-        os: [ubuntu-latest, macos-12]
-        swift: ["5.5", "5.6.1"]
+    name: Build & Test for Linux
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: swift-actions/setup-swift@v1
+      - name: Install Swift
+        uses: sersoft-gmbh/swifty-linux-action@v2
         with:
-          swift-version: ${{ matrix.swift }}
-      - name: Build Swift
-        run: swift build
-      - name: Test Swift
-        run: swift test
+          release-version: 5.5
+      - name: Build Linux
+        run: |
+          swift build
+          swift test
