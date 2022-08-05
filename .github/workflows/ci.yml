@@ -9,13 +9,13 @@ jobs:
 
   Apple:
     name: Test ${{ matrix.targets.destination }}
-    runs-on: macos-latest
+    runs-on: macos-12
     strategy:
       matrix:
         targets:
           - {destination: 'platform=macOS', scheme: 'WIPFoundation macOS'}
-          - {destination: 'platform=iOS Simulator,OS=15.2,name=iPhone 8', scheme: 'WIPFoundation iOS'}
-          - {destination: 'platform=tvOS Simulator,OS=15.2,name=Apple TV', scheme: 'WIPFoundation tvOS'}
+          - {destination: 'platform=iOS Simulator,OS=15.5,name=iPhone 13', scheme: 'WIPFoundation iOS'}
+          - {destination: 'platform=tvOS Simulator,OS=15.4,name=Apple TV', scheme: 'WIPFoundation tvOS'}
         swift-version: [5.5]
     steps:
       - uses: actions/checkout@v3
